@@ -1,0 +1,58 @@
+@use "global" as *;
+
+// セクションヘッダー共通
+.section-header {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    font-family: $en-font-family;
+    @include mq('md') {
+        font-size: 4rem;
+    }
+}
+
+.section-title::first-letter {
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: $accent-color;
+    line-height: 1.8em;
+    margin-top: 0.4rem;
+    
+    @include mq('md') {
+        margin-top: 0.8rem;
+    }
+}
+
+// ブログのみ
+.section-title.section-title__blog {
+    @include mq('md') {
+        color: $white;
+    }
+}
+
+.section-title.section-title__blog::first-letter {
+    @include mq('md') {
+        color: $white;
+    }
+}
+
+.section-subtitle.section-subtitle__blog {
+    @include mq('md') {
+        color: $white;
+    }
+}
+
+// コンタクトのみ
+.section-title.section-title__contact {
+    font-size: 8rem;
+}
+
+.section-subtitle.section-subtitle__contact {
+    margin-top: initial;
+}
