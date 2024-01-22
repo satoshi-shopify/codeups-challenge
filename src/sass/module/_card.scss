@@ -1,45 +1,89 @@
 @use "global" as *;
 
 .card {
+    box-shadow: rem(2) rem(2) rem(10) #D9D9D9;
+    max-width: rem(345);
+    width: 100%;
 
+    @include mq('md') {
+        max-width: rem(520);
+    }
 }
 
 .card-inner {
-
+    padding: rem(24) rem(16);
 }
 
 .card-body {
-
+    display: flex;
 }
 
 .card-info {
+    padding-bottom: rem(4);
+    border-bottom: rem(1) solid $accent-color;
+}
 
+.card-meta {
+    @include mq('md') {
+        display: flex;
+    }
 }
 
 .card-personal {
+    font-size: rem(12);
+    line-height: (18 / 12);
 
+    @include mq('md') {
+        margin-top: auto;
+    }
 }
 
 .card-label {
+    display: inline-block;
+    font-size: rem(12);
+    color: $accent-color;
+    line-height: (22 / 12);
+    padding: rem(5) rem(12);
+    border: rem(1) solid $accent-color;
 
+    @include mq('md') {
+        margin-left: auto;
+    }
 }
 
 .card-title {
+    font-size: rem(16);
+    line-height: (23 / 16);
+    margin-top: rem(4);
 
+    @include mq('md') {
+        margin-top: rem(8);
+    }
 }
 
 .card-img {
-
+    max-width: rem(151);
+    width: 100%;
+    height: auto;
+    
+    @include mq('md') {
+        max-width: rem(180);
+    }
 }
 
 .card-img img {
-    
+
 }
 
 .card-text {
+    margin-top: rem(16);
 
+    @include mq('md') {
+        margin-top: rem(40);
+    }
 }
 
 .card-text p {
-    
+    font-size: rem(16);
+    line-height: (24 / 16);
 }

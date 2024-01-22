@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.btn {
+    padding: rem(16) rem(40);
+    background-color: $accent-color;
+    display: inline-block;
+}
+
+.btn-link {
+}
+
+.btn-link p {
+    font-size: rem(14);
+    color: $white;
+}
+
+.btn-link p::first-letter {
+    text-transform: uppercase;
+}
+
+
