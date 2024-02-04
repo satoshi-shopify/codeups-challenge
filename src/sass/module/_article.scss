@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.article {
+    max-width: rem(333);
+    width: 100%;
+    box-shadow: rem(2) rem(2) rem(10) #D9D9D9;
+}
+
+.article-inner {
+    padding: rem(16) rem(16) rem(24) rem(16);
+}
+
+.article-img {
+    max-width: rem(302);
+    width: 100%;
+    text-align: center;
+}
+
+.article-img img {
+
+}
+
+.article-body {
+
+}
+
+.article-date {
+    font-size: rem(12);
+}
+
+.article-title {
+    font-size: rem(16);
+    padding-bottom: rem(4);
+    border-bottom: rem(1) solid $accent-color;
+}
+
+.article-text {
+    margin-top: rem(16);
+}

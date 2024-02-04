@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.sp-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: $accent-color;
+
+    @include mq('md') {
+        display: none;
+    }
+}
+
+.sp-wrapper {
+    display: flex;
+    padding-top: rem(104);
+    justify-content: center;
+    padding-left: rem(15);
+}
+
+.sp-items {
+    height: 100vh;
+    width: 100%;
+}
+
+.sp-item {
+
+}
+
+.sp-items+.sp-items {
+    margin-left: rem(7);
+}
+
+.sp-item a {
+    display: block;
+    color: $white;
+    padding-left: rem(24);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+}
+
+.sp-item.sp-item__bold a {
+    font-weight: bold;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    position: relative;
+}
+
+.sp-item.sp-item__bold a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(18);
+    height: rem(18);
+    background-image: url(../images/common/footer-star.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}

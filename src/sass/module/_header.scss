@@ -1,0 +1,23 @@
+@use "global" as *;
+
+header {
+    height: rem(80);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0D2936;
+    z-index: 999;
+    opacity: 68%;
+    
+    @include mq('md') {
+        height: rem(90);
+    }
+}
+
+.header-inner {
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+

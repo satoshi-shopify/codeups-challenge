@@ -1,0 +1,77 @@
+@use "global" as *;
+
+.voice {
+    padding-top: rem(40);
+    padding-bottom: rem(80);
+
+    @include mq('md') {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+        position: relative;
+    }
+}
+
+.voice::before {
+    content: "";
+    position: absolute;
+    top: rem(20);
+    left: calc(50% - rem(1200) / 2);
+    background-image: url(../images/common/voice-fish.png);
+    display: inline-block;
+    width: rem(301);/*画像の幅*/
+    height: rem(138);/*画像の高さ*/
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.voice::after {
+    content: "";
+    position: absolute;
+    bottom: rem(73);
+    right: calc(50% - rem(1077) / 2);
+    background-image: url(../images/common/voice-dra.png);
+    display: inline-block;
+    width: rem(71);/*画像の幅*/
+    height: rem(162);/*画像の高さ*/
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.voice-inner {
+
+}
+
+.voice-cards {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: rem(1080);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.voice-card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.voice-card + .voice-card {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        margin-top: initial;
+    }
+}
+
+.voice-btn {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        margin-top: rem(80);
+    }
+}

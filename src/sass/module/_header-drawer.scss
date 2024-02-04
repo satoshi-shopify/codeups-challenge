@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.header-drawer {
+    display: block;
+    margin-left: auto;
+    margin-right: rem(15);
+    position: relative;
+    z-index: 999;
+    
+    @include mq('md') {
+      display: none;
+    }
+  }
+  
+  .header-drawer span {
+    display: block;
+    width: 3.1rem;
+    height: 0.2rem;
+    background: #fff;
+    border-radius: 1px;
+    transition: 0.3s ease;
+    position: relative;
+  }
+  
+  .header-drawer span:nth-child(1) {
+    top: 0;
+  }
+  
+  .header-drawer span:nth-child(2) {
+    margin: 0.6rem 0;
+  }
+  
+  .header-drawer span:nth-child(3) {
+    top: 0;
+  }
+  
+  .header-drawer.is-open span:nth-child(1) {
+    top: 0.8rem;
+    transform: rotate(45deg);
+  }
+  
+  .header-drawer.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .header-drawer.is-open span:nth-child(3) {
+    top: -0.8rem;
+    transform: rotate(-45deg);
+  }

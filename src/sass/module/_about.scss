@@ -1,0 +1,102 @@
+@use "global" as *;
+
+.about {
+    @include mq('md') {
+        position: relative;
+    }
+}
+
+.about::after {
+    @include mq('md') {
+        content: "";
+        position: absolute;
+        bottom: rem(74);
+        right: calc(50% - rem(1440) / 2);
+        background-image: url(../images/common/about-pc.png);
+        display: inline-block;
+        width: rem(194);/*画像の幅*/
+        height: rem(181);/*画像の高さ*/
+        background-size: contain;
+        vertical-align: middle;
+    }
+}
+
+.about-inner {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: rem(15);
+    padding-right: rem(15);
+
+    @include mq('md') {
+        padding-bottom: rem(164);
+    }
+}
+
+.about-items {
+    @include mq('md') {
+        background-image: url(../images/common/about-ocean.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-left: rem(199);
+        padding-top: rem(200);
+        padding-bottom: rem(219);
+    }
+}
+
+
+.about-img {
+    margin-top: rem(24);
+    position: relative;
+    max-width: rem(345);
+    width: 100%;
+
+    @include mq('md') {
+        display: none;
+    }
+}
+
+.about-body {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        display: flex;
+    }
+}
+
+.about-title {
+    font-size: rem(40);
+    color: $accent-color;
+    font-family: $en-font-family;
+
+    @include mq('md') {
+        color: $white;
+        font-size: rem(80);
+    }
+}
+
+.about-title span {
+    text-transform: uppercase;
+}
+
+.about-content {
+    @include mq('md') {
+        max-width: rem(400);
+        margin-left: rem(40);
+    }
+}
+
+.about-text {
+    font-size: rem(16);
+    margin-top: rem(16);
+
+    @include mq('md') {
+        color: $white;
+    }
+}
+
+.about-btn {
+    margin-top: rem(50);
+}

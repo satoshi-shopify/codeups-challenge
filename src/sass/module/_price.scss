@@ -1,0 +1,129 @@
+@use "global" as *;
+
+.price {
+    background-color: #DDF0F1;
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+
+    @include mq('md') {
+        padding-top: rem(100);
+        padding-bottom: rem(100);
+        padding-left: rem(10);
+        padding-right: rem(10);
+        position: relative;
+    }
+}
+
+.price::after {
+    @include mq('md') {
+        content: "";
+        position: absolute;
+        bottom: rem(60);
+        left: calc(50% - rem(1200) / 2);
+        background-image: url(../images/common/price-fish.png);
+        display: inline-block;
+        width: rem(437);/*画像の幅*/
+        height: rem(201);/*画像の高さ*/
+        background-size: contain;
+        vertical-align: middle;
+    }
+}
+
+.price-inner {
+
+}
+
+.price-contents {
+
+    @include mq('md') {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-top: rem(40);
+    }
+}
+
+.price-img {
+
+}
+
+.price-img__sp {
+    max-width: rem(345);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(24);
+
+    @include mq('md') {
+        display: none;
+    }
+}
+
+.price-img__pc {
+    display: none;
+
+    @include mq('md') {
+    display: block;
+    max-width: rem(492);
+    width: 100%;
+    margin-left: rem(93);
+    }
+}
+
+.price-items {
+    max-width: rem(345);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq('md') {
+        margin-left: initial;
+        margin-right: initial;
+        max-width: rem(492);
+    }
+}
+
+.price-item {
+    margin-top: rem(40);
+}
+
+.price-item:nth-child(1) {
+
+    @include mq('md') {
+        margin-top: initial;
+    }
+}
+
+.price-title {
+    font-size: rem(16);
+    font-weight: $bold;
+    padding-bottom: rem(4);
+    border-bottom: rem(1) solid $accent-color;
+}
+
+.price-body {
+
+}
+
+.price-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(8);
+}
+
+.price-menu span {
+    font-size: rem(14);
+
+
+    @include mq('md') {
+        font-size: rem(16);
+    }
+}
+
+.price-btn {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        margin-top: rem(80);
+    }
+}

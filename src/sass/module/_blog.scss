@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.blog {
+    padding-top: rem(80);
+    padding-bottom: rem(40);
+
+    @include mq('md') {
+        padding-top: rem(100);
+        padding-bottom: initial;
+        position: relative;
+    }
+}
+
+.blog::after {
+    content: "";
+    position: absolute;
+    top: rem(24);
+    left: calc(50% - rem(1200) / 2);
+    background-image: url(../images/common/blog-fish.png);
+    display: inline-block;
+    width: rem(437);/*画像の幅*/
+    height: rem(201);/*画像の高さ*/
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.blog-inner {
+
+}
+
+.blog-articles {
+    margin-top: rem(24);
+
+    @include mq('md') {
+        display: flex;
+    }
+}
+
+.blog-article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-article + .blog-article {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        margin-top: initial;
+    }
+}
+
+.blog-btn {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        margin-top: rem(80);
+    }
+}
