@@ -6,10 +6,10 @@
 }
 
 .section-title {
-    font-size: 3.2rem;
+    font-size: rem(32);
     font-family: $en-font-family;
     @include mq('md') {
-        font-size: 4rem;
+        font-size: rem(40);
     }
 }
 
@@ -19,13 +19,13 @@
 }
 
 .section-subtitle {
-    font-size: 1.2rem;
+    font-size: rem(12);
     color: $accent-color;
     line-height: (18 / 12);
-    margin-top: 0.4rem;
+    margin-top: rem(4);
     
     @include mq('md') {
-        margin-top: 0.8rem;
+        margin-top: rem(8);
     }
 }
 
@@ -50,7 +50,8 @@
 
 // コンタクトのみ
 .section-title.section-title__contact {
-    font-size: 8rem;
+    font-size: rem(80);
+    line-height: 1;
 }
 
 .section-subtitle.section-subtitle__contact {
