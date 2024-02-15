@@ -6,9 +6,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #0D2936;
+    background-color: rgba(13, 41, 54, 0.68);
     z-index: 999;
-    opacity: 68%;
     
     @include mq('md') {
         height: rem(90);
@@ -19,5 +18,12 @@ header {
     display: flex;
     height: inherit;
     align-items: center;
+    max-width: rem(1440);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+header.is-scroll {
+    background-color: #9A9A9A;
+}

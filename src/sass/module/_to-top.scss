@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.totop {
+    display: inline-block;
+    width: rem(48);
+    height: rem(48);
+    position: fixed;
+    bottom: rem(20);
+    right: rem(15);
+    border: rem(1) solid $accent-color;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.totop:hover {
+    background-color: $accent-color;
+}
+
+.totop:hover .totop-allow span {
+    background: $white;
+}
+  
+.totop.is-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.totop-allow span {
+    display: block;
+    background: $accent-color;
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.totop-allow span:nth-child(1) {
+    width: rem(28);
+    height: rem(1);
+    top: rem(24);
+    left: rem(9);
+    transform: rotate(90deg);
+}
+
+.totop-allow span:nth-child(2) {
+    width: rem(8);
+    height: rem(1);
+    left: rem(17);
+    top: rem(12);
+    transform: rotate(125deg);
+}

@@ -70,6 +70,7 @@
     max-width: rem(151);
     width: 100%;
     height: auto;
+    overflow: hidden;
     
     @include mq('md') {
         max-width: rem(180);
@@ -78,7 +79,11 @@
 
 
 .card-img img {
+    transition: transform .6s ease;
+}
 
+.card-img:hover img {
+    transform: scale(1.1);
 }
 
 .card-text {

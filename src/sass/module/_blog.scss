@@ -8,6 +8,14 @@
         padding-top: rem(100);
         padding-bottom: initial;
         position: relative;
+        background-image: url(../images/common/blog-bgd.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        max-width: rem(1440);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -33,12 +41,18 @@
 
     @include mq('md') {
         display: flex;
+        justify-content: center;
     }
 }
 
 .blog-article {
     margin-left: auto;
     margin-right: auto;
+
+    @include mq('md') {
+        margin-left: initial;
+        margin-right: initial;
+    }
 }
 
 .blog-article + .blog-article {
@@ -46,6 +60,7 @@
 
     @include mq('md') {
         margin-top: initial;
+        margin-left: rem(40);
     }
 }
 

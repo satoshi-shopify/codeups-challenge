@@ -3,13 +3,19 @@
 footer {
     background-color: $accent-color;
     padding-top: rem(41);
-    padding-left: rem(14);
-    padding-right: rem(14);
     padding-bottom: rem(56);
 }
 
 .footer-inner {
+    max-width: rem(355);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
+    @include mq('md') {
+        max-width: rem(1080);
+        padding-left: rem(10);
+    }
 }
 
 .footer-icon {
@@ -41,54 +47,90 @@ footer {
 }
 
 
-.footer-wrapper {
+.footer-items {
     display: flex;
     padding-top: rem(40);
     justify-content: center;
-    padding-left: rem(15);
 
     @include mq('md') {
         padding-top: rem(29);
     }
 }
 
-.footer-items {
-    width: 100%;
-}
-
 .footer-item {
 
+    @include mq('md') {
+        display: flex;
+    }
+
 }
 
-.footer-item + .footer-item {
+.footer-contents {
+
+}
+
+.footer-contents:nth-child(2) {
+
+    @include mq('md') {
+        margin-left: rem(120);
+    }
+}
+
+.footer-content {
+
+}
+
+.footer-content + .footer-content {
     margin-top: rem(40);
 }
 
-.footer-items + .footer-items {
-    margin-left: rem(7);
+.footer-item + .footer-item {
+    margin-left: rem(16);
+
+    @include mq('md') {
+        margin-left: rem(120);
+    }
 }
 
-.footer-item a {
+.footer-content a {
     display: block;
     color: $white;
     padding-left: rem(24);
-    padding-top: rem(12);
     padding-bottom: rem(12);
+    position: relative;
 }
 
-.footer-item .footer-item__bold {
+.footer-content a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: rem(10);
+    left: 0;
+    /*線の形状*/
+    width: 100%;
+    height: rem(2);
+    background: $white;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+.footer-content a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+.footer-content .footer-content__bold {
     font-weight: bold;
-    padding-top: rem(20);
     padding-bottom: rem(20);
     position: relative;
 }
 
-.footer-item .footer-item__bold::before {
+.footer-content .footer-content__bold::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 0;
-    transform: translateY(-50%);
     width: rem(18);
     height: rem(18);
     background-image: url(../images/common/footer-star.png);
@@ -99,6 +141,7 @@ footer {
 
 .footer-copyright {
     margin-top: rem(10);
+    text-align: center;
 }
 
 .footer-copyright p {

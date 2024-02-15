@@ -32,10 +32,19 @@
 .information-img {
     max-width: rem(345);
     width: 100%;
+    overflow: hidden;
 
     @include mq('md') {
         max-width: rem(540);
     }
+}
+
+.information-img img {
+    transition: transform .6s ease;
+}
+
+.information-img:hover img {
+    transform: scale(1.1);
 }
 
 .information-body {

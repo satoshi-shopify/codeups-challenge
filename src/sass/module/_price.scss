@@ -40,11 +40,23 @@
         flex-direction: row-reverse;
         justify-content: center;
         margin-top: rem(40);
+        max-width: rem(1080);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 .price-img {
+    overflow: hidden;
+}
 
+.price-img img {
+    transition: transform .6s ease;
+}
+
+.price-img:hover img {
+    transform: scale(1.1);
 }
 
 .price-img__sp {

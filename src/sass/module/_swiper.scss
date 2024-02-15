@@ -1,0 +1,124 @@
+@use "global" as *;
+
+// FV
+
+
+// campaign
+.swiper-container.swiper-container__campaign {
+    position: relative;
+}
+
+.swiper__campaign.swiper {
+    position: relative;
+    width: calc(100% + (100vw - 345px) / 2);
+    overflow: hidden;
+    margin-right: initial;
+    
+    @include mq('md') {
+        width: calc(100% + (100vw - 1080px) / 2);
+    }
+}
+
+.swiper-wrapper__campaign.swiper-wrapper {
+    position: relative;
+}
+
+.swiper-slide.swiper-slide__campaign {
+    max-width: rem(280);
+    width: 100%;
+    margin-right: rem(24);
+
+    @include mq('md') {
+        max-width: rem(333);
+        margin-right: rem(40);
+    }
+}
+
+// ============================
+//     pagination について
+// ============================
+
+//色と大きさ指定
+.swiper-pagination-bullet {
+    opacity: 1;
+    background: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; //円にする
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: red;
+}
+//paginationの余白指定
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+//paginationの位置
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//progressbarの場合
+// .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+//     top: calc(100% - 10px);
+//     height: 10px;
+//     background: gray;
+// }
+// //実際に変化する棒の色
+// .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+//     background: red;
+// }
+
+// ==============================
+//     navigation について
+// ==============================
+
+.swiper-button-prev {
+    //位置はここで指定
+    // top: 50%;
+    // transform: translateY(-50%);
+    width: rem(80);
+    top: rem(-50);
+    right: rem(160);
+    left: auto;
+}
+
+.swiper-button-prev::after {
+    content: "";
+
+    @include mq('md') {
+        content: ''; //デフォルトの削除
+        background-image: url(../images/common/swiper-prev.png);
+        width: rem(80);
+        height: rem(80);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.swiper-button-next {
+    //位置はここで指定
+    // top: 50%;
+    // transform: translateY(-50%);
+    width: rem(80);
+    top: rem(-50);
+    right: 0;
+    left: auto;
+}
+
+.swiper-button-next::after {
+    content: "";
+
+    @include mq('md') {
+        content: ''; //デフォルトの削除
+        background-image: url(../images/common/swiper-next.png);
+        width: rem(80);
+        height: rem(80);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
