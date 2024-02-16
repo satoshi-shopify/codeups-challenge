@@ -43,7 +43,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding-left: rem(199);
+        padding-left: 18.42592592%;
         padding-top: rem(200);
         padding-bottom: rem(219);
     }
@@ -76,7 +76,8 @@
 
     @include mq('md') {
         color: $white;
-        font-size: rem(80);
+        font-size: rem(70);
+        max-width: rem(400);
     }
 }
 
