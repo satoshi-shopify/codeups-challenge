@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .logo {
-    width: rem(102);
-    margin-left: rem(15);
+    width: rem(107);
+    margin-left: rem(12);
 
     @include mq('md') {
         width: rem(133);
