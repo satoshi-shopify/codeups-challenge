@@ -3,7 +3,7 @@
 .information {
     background-color: #DDF0F1;
     padding-top: rem(80);
-        padding-bottom: rem(80);
+    padding-bottom: rem(83);
     
     @include mq('md') {
         padding-top: rem(100);
@@ -69,5 +69,6 @@
 }
 
 .information-btn {
-    margin-top: rem(40);
+    margin-top: rem(39);
+    margin-right: rem(3);
 }

@@ -3,7 +3,7 @@
 .price {
     background-color: #DDF0F1;
     padding-top: rem(80);
-    padding-bottom: rem(80);
+    padding-bottom: rem(83);
 
     @include mq('md') {
         padding-top: rem(100);
@@ -64,7 +64,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: rem(24);
+    margin-top: rem(29);
 
     @include mq('md') {
         display: none;
@@ -109,7 +109,7 @@
 .price-title {
     font-size: rem(16);
     font-weight: $bold;
-    padding-bottom: rem(4);
+    padding-bottom: rem(3);
     border-bottom: rem(1) solid $accent-color;
 }
 
@@ -121,6 +121,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: rem(8);
+    line-height: 1.714285714285714;
 }
 
 .price-menu span {
@@ -133,7 +134,8 @@
 }
 
 .price-btn {
-    margin-top: rem(40);
+    margin-top: rem(39);
+    margin-right: rem(3);
 
     @include mq('md') {
         margin-top: rem(80);

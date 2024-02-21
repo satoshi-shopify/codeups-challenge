@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .voice {
-    padding-top: rem(40);
-    padding-bottom: rem(80);
+    padding-top: rem(43);
+    padding-bottom: rem(82);
 
     @include mq('md') {
         padding-top: rem(140);
@@ -25,16 +25,19 @@
 }
 
 .voice::after {
-    content: "";
-    position: absolute;
-    bottom: rem(73);
-    right: calc(50% - rem(1077) / 2);
-    background-image: url(../images/common/voice-dra.png);
-    display: inline-block;
-    width: rem(71);/*画像の幅*/
-    height: rem(162);/*画像の高さ*/
-    background-size: contain;
-    vertical-align: middle;
+
+    @include mq('md') {
+        content: "";
+        position: absolute;
+        bottom: rem(73);
+        right: calc(50% - rem(1077) / 2);
+        background-image: url(../images/common/voice-dra.png);
+        display: inline-block;
+        width: rem(71);/*画像の幅*/
+        height: rem(162);/*画像の高さ*/
+        background-size: contain;
+        vertical-align: middle;
+    }
 }
 
 .voice-inner {
@@ -42,7 +45,7 @@
 }
 
 .voice-cards {
-    margin-top: rem(40);
+    margin-top: rem(43);
 
     @include mq('md') {
         display: flex;
@@ -61,7 +64,7 @@
 }
 
 .voice-card + .voice-card {
-    margin-top: rem(40);
+    margin-top: rem(39);
 
     @include mq('md') {
         margin-top: initial;
@@ -69,7 +72,8 @@
 }
 
 .voice-btn {
-    margin-top: rem(40);
+    margin-top: rem(38);
+    margin-right: rem(3);
 
     @include mq('md') {
         margin-top: rem(80);

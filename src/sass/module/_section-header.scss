@@ -52,9 +52,10 @@
 // コンタクトのみ
 .section-title.section-title__contact {
     font-size: rem(80);
-    line-height: 1;
+    line-height: 0.9;
 }
 
 .section-subtitle.section-subtitle__contact {
     margin-top: initial;
+    line-height: 1;
 }

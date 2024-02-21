@@ -11,7 +11,7 @@
 }
 
 .card-inner {
-    padding: rem(24) rem(16);
+    padding: rem(15) rem(16) rem(24);
 }
 
 .card-body {
@@ -19,6 +19,9 @@
 }
 
 .card-info {
+    max-width: rem(149);
+    width: 100%;
+    margin-right: rem(13);
     padding-bottom: rem(4);
     border-bottom: rem(1) solid $accent-color;
 
@@ -47,7 +50,7 @@
     font-size: rem(12);
     color: $accent-color;
     line-height: (22 / 12);
-    padding: rem(5) rem(12);
+    padding: rem(3) rem(11);
     border: rem(1) solid $accent-color;
 
     @include mq('md') {
@@ -67,6 +70,7 @@
 }
 
 .card-img {
+    margin-top: rem(9);
     max-width: rem(151);
     width: 100%;
     height: auto;

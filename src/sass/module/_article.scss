@@ -28,11 +28,12 @@
 }
 
 .article-body {
-
+    padding-top: rem(18);
 }
 
 .article-date {
     font-size: rem(12);
+    font-family: $en-font-family;
 }
 
 .article-title {
