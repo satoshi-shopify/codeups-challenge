@@ -25,19 +25,19 @@
   }
   
   .header-drawer span:nth-child(1) {
-    top: -12px;
+    top: rem(-12);
   }
   
   .header-drawer span:nth-child(2) {
-    margin: 0.6px 0;
+    margin: rem(0.6) 0;
   }
   
   .header-drawer span:nth-child(3) {
-    top: 10px;
+    top: rem(10);
   }
   
   .header-drawer.is-open span:nth-child(1) {
-    top: 0.8px;
+    top: rem(0.8);
     transform: rotate(45deg);
   }
   
@@ -46,6 +46,6 @@
   }
   
   .header-drawer.is-open span:nth-child(3) {
-    top: -0.8px;
+    top: rem(-0.8);
     transform: rotate(-45deg);
   }

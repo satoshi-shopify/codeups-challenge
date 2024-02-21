@@ -70,7 +70,7 @@
 .btn-allow span {
     display: block;
     background: $white;
-    border-radius: 1px;
+    border-radius: rem(1);
     position: relative;
     transition: all 0.3s;
 }

@@ -5,7 +5,7 @@
     padding-bottom: rem(40);
 
     @include mq('md') {
-        padding-top: rem(100);
+        padding-top: rem(93);
         padding-bottom: initial;
         position: relative;
         background-image: url(../images/common/blog-bgd.png);
@@ -23,7 +23,7 @@
     content: "";
     position: absolute;
     top: rem(24);
-    left: calc(50% - rem(1200) / 2);
+    left: calc(50% - rem(1240) / 2);
     background-image: url(../images/common/blog-fish.png);
     display: inline-block;
     width: rem(437);/*画像の幅*/
@@ -42,6 +42,7 @@
     @include mq('md') {
         display: flex;
         justify-content: center;
+        margin-top: rem(80);
     }
 }
 
@@ -69,6 +70,7 @@
     margin-right: rem(3);
 
     @include mq('md') {
-        margin-top: rem(80);
+        margin-right: rem(6);
+        margin-top: rem(77);
     }
 }

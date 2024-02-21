@@ -46,8 +46,8 @@
 .swiper-pagination-bullet {
     opacity: 1;
     background: gray;
-    width: 20px;
-    height: 20px;
+    width: rem(20);
+    height: rem(20);
     border-radius: 50%; //円にする
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -55,7 +55,7 @@
 }
 //paginationの余白指定
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 10px;
+    margin: 0 rem(10);
 }
 //paginationの位置
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {

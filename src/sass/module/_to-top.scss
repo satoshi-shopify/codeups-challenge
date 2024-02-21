@@ -31,7 +31,7 @@
 .totop-allow span {
     display: block;
     background: $accent-color;
-    border-radius: 1px;
+    border-radius: rem(1);
     position: relative;
     transition: all 0.3s;
 }
