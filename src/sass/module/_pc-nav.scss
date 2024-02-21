@@ -22,7 +22,7 @@
     height: inherit;
     padding-left: rem(20);
     padding-right: rem(20);
-    padding-top: rem(26);
+    padding-top: rem(22);
     position: relative;
 }
 
@@ -54,6 +54,12 @@
 
 .pc-list a span:nth-child(1) {
     font-size: rem(18);
+    text-transform: capitalize;
+    font-family: $en-font-family;
+}
+
+.pc-list__uppercase a span:nth-child(1) {
+    text-transform: uppercase;
 }
 
 .pc-list a span:nth-child(2) {

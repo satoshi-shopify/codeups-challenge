@@ -36,6 +36,11 @@
 
 .slide-body {
     padding: rem(16) rem(16) rem(24);
+
+    @include mq('md') {
+        padding-top: rem(24);
+        padding-bottom: rem(40);
+    }
 }
 
 .slide-label {
@@ -43,7 +48,12 @@
     padding: rem(4) rem(11) rem(3) rem(12);
     border: rem(1) solid $accent-color;
     font-size: rem(12);
-    line-height: (22 / 12);
+    line-height: 1.83333333;
+    color: $accent-color;
+
+    @include mq('md') {
+        padding: rem(5) rem(15);
+    }
 }
 
 .slide-title {
@@ -57,6 +67,11 @@
     font-size: rem(14);
     margin-top: rem(11);
     text-align: center;
+
+    @include mq('md') {
+        margin-top: rem(16);
+        font-size: rem(16);
+    }
 }
 
 .slide-price {
@@ -70,6 +85,11 @@
     font-size: rem(20);
     font-family: $number-font-family;
     font-weight: $bold;
+
+    @include mq('md') {
+        font-size: rem(24);
+        margin-right: rem(12);
+    }
 }
 
 .slide-newprice {
@@ -80,4 +100,9 @@
     color: $accent-color;
     line-height: 1;
     margin-top: rem(8);
+
+    @include mq('md') {
+        font-size: rem(40);
+        margin-top: rem(9);
+    }
 }

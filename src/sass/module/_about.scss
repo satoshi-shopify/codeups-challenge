@@ -30,6 +30,7 @@
     width: 100%;
 
     @include mq('md') {
+        padding-top: rem(98);
         padding-bottom: rem(164);
         max-width: rem(1080);
         padding-left: rem(10);

@@ -14,6 +14,7 @@
 
     @include mq('md') {
         max-width: rem(1080);
+        padding-top: rem(115);
     }
 }
 
@@ -24,4 +25,8 @@
 .campaign-btn {
     margin-top: rem(37);
     margin-right: rem(4);
+
+    @include mq('md') {
+        margin-top: rem(77);
+    }
 }

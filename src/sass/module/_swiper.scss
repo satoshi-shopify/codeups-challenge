@@ -6,6 +6,10 @@
 // campaign
 .swiper-container.swiper-container__campaign {
     position: relative;
+
+    @include mq('md') {
+        margin-top: rem(15);
+    }
 }
 
 .swiper__campaign.swiper {
@@ -80,7 +84,7 @@
     // top: 50%;
     // transform: translateY(-50%);
     width: rem(80);
-    top: rem(-50);
+    top: rem(-41);
     right: rem(160);
     left: auto;
 }
@@ -104,7 +108,7 @@
     // top: 50%;
     // transform: translateY(-50%);
     width: rem(80);
-    top: rem(-50);
+    top: rem(-41);
     right: 0;
     left: auto;
 }
