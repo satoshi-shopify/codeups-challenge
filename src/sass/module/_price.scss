@@ -6,7 +6,7 @@
     padding-bottom: rem(83);
 
     @include mq('md') {
-        padding-top: rem(100);
+        padding-top: rem(95);
         padding-bottom: rem(100);
         padding-left: rem(10);
         padding-right: rem(10);
@@ -19,7 +19,7 @@
         content: "";
         position: absolute;
         bottom: rem(60);
-        left: calc(50% - rem(1200) / 2);
+        left: calc(50% - rem(1237) / 2);
         background-image: url(../images/common/price-fish.png);
         display: inline-block;
         width: rem(437);/*画像の幅*/
@@ -33,13 +33,19 @@
 
 }
 
+.price-inner .section-header {
+    @include mq('md') {
+        margin-right: rem(6);
+    }
+}
+
 .price-contents {
 
     @include mq('md') {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        margin-top: rem(40);
+        margin-top: rem(39);
         max-width: rem(1080);
         width: 100%;
         margin-left: auto;
@@ -122,6 +128,10 @@
     justify-content: space-between;
     margin-top: rem(8);
     line-height: 1.714285714285714;
+
+    @include mq('md') {
+        line-height: 1.5;
+    }
 }
 
 .price-menu span {

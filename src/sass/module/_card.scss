@@ -12,10 +12,19 @@
 
 .card-inner {
     padding: rem(15) rem(16) rem(24);
+
+    @include mq('md') {
+        padding: rem(24);
+    }
 }
 
 .card-body {
     display: flex;
+
+    @include mq('md') {
+        align-items: flex-end;
+        margin-top: rem(-9);
+    }
 }
 
 .card-info {
@@ -27,6 +36,7 @@
 
     @include mq('md') {
         margin-right: rem(16);
+        max-width: rem(276);
     }
 }
 
@@ -55,6 +65,7 @@
 
     @include mq('md') {
         margin-left: auto;
+        padding: rem(5) rem(15);
     }
 }
 
