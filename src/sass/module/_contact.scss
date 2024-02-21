@@ -8,6 +8,8 @@
     @include mq('md') {
         padding-top: rem(140);
         padding-bottom: rem(160);
+        padding-left: rem(10);
+        padding-right: rem(10);
     }
 }
 
@@ -25,9 +27,9 @@
 
     @include mq('md') {
         top: rem(100);
-        right: calc(50% - rem(1440) / 2);
-        width: rem(296);/*画像の幅*/
-        height: rem(138);/*画像の高さ*/
+        right: calc(50% - rem(1350) / 2);
+        width: rem(313);/*画像の幅*/
+        height: rem(148);/*画像の高さ*/
     }
 }
 
@@ -39,7 +41,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding: rem(80) rem(112) rem(80) rem(50);
+        padding: rem(80) rem(112) rem(74) rem(50);
         box-shadow: rem(2) rem(2) rem(10) #D9D9D9;
     }
 }
@@ -152,6 +154,10 @@
 .contact-btn {
     margin-top: rem(38);
     margin-right: rem(3);
+
+    @include mq('md') {
+        margin-right: initial;
+    }
 }
 
 

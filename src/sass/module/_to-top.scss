@@ -13,10 +13,17 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
+
+    @include mq('md') {
+        width: rem(80);
+        height: rem(80);
+        right: rem(20);
+    }
 }
 
 .totop:hover {
     background-color: $accent-color;
+    border: rem(1) solid $white;
 }
 
 .totop:hover .totop-allow span {
@@ -42,6 +49,12 @@
     top: rem(24);
     left: rem(9);
     transform: rotate(90deg);
+
+    @include mq('md') {
+        width: rem(40);
+        top: rem(40);
+        left: rem(20);
+    }
 }
 
 .totop-allow span:nth-child(2) {
@@ -50,4 +63,10 @@
     left: rem(17);
     top: rem(12);
     transform: rotate(125deg);
+
+    @include mq('md') {
+        width: rem(10);
+        left: rem(32);
+        top: rem(24);
+    }
 }

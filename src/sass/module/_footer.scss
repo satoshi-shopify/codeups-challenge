@@ -4,6 +4,13 @@ footer {
     background-color: $accent-color;
     padding-top: rem(49);
     padding-bottom: rem(56);
+
+    @include mq('md') {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+        padding-left: rem(10);
+        padding-right: rem(10);
+    }
 }
 
 .footer-inner {
@@ -14,29 +21,45 @@ footer {
 
     @include mq('md') {
         max-width: rem(1080);
-        padding-left: rem(10);
     }
 }
 
 .footer-icon {
-
+    @include mq('md') {
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
 .footer-codeups {
     display: block;
     max-width: rem(120);
     width: 100%;
+
+    @include mq('md') {
+        max-width: rem(200);
+    }
 }
 
 .footer-sns {
     display: flex;
     margin-top: rem(16);
+
+    @include mq('md') {
+        margin-top: initial;
+        margin-left: rem(40);
+        margin-bottom: rem(4);
+    }
 }
 
 .footer-facebook {
     display: block;
     max-width: rem(24);
     width: 100%;
+
+    @include mq('md') {
+        max-width: rem(32);
+    }
 }
 
 .footer-instagram {
@@ -44,6 +67,10 @@ footer {
     max-width: rem(24);
     width: 100%;
     margin-left: rem(16);
+
+    @include mq('md') {
+        max-width: rem(32);
+    }
 }
 
 
@@ -51,7 +78,7 @@ footer {
     display: flex;
 
     @include mq('md') {
-        justify-content: center;
+
     }
 }
 
@@ -78,7 +105,7 @@ footer {
 .footer-contents:nth-child(2) {
 
     @include mq('md') {
-        margin-left: rem(120);
+        margin-left: rem(116);
     }
 }
 
@@ -88,6 +115,12 @@ footer {
 
 .footer-content {
     margin-top: rem(40);
+}
+
+.footer-content:nth-child(1) {
+    @include mq('md') {
+        margin-top: rem(25);
+    }
 }
 
 .footer-item + .footer-item {
@@ -147,10 +180,24 @@ footer {
 .footer-copyright {
     margin-top: rem(40);
     text-align: center;
+
+    @include mq('md') {
+        margin-top: rem(78);
+    }
 }
 
 .footer-copyright p {
     color: $white;
     font-size: rem(12);
     font-family: $en-font-family;
+
+    @include mq('md') {
+        font-size: rem(14);
+    }
+}
+
+.footer-br__sp {
+    @include mq('md') {
+        display: none;
+    }
 }

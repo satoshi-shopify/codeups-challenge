@@ -7,7 +7,7 @@
 
     @include mq('md') {
         padding-top: rem(95);
-        padding-bottom: rem(100);
+        padding-bottom: rem(102);
         padding-left: rem(10);
         padding-right: rem(10);
         position: relative;
@@ -18,7 +18,7 @@
     @include mq('md') {
         content: "";
         position: absolute;
-        bottom: rem(60);
+        bottom: rem(58);
         left: calc(50% - rem(1237) / 2);
         background-image: url(../images/common/price-fish.png);
         display: inline-block;
