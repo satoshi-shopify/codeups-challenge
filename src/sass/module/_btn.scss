@@ -50,14 +50,14 @@
     display: flex;
 }
 
-.btn-link p {
+.btn-text {
     font-size: rem(14);
     font-family: $en-font-family;
     color: $white;
     line-height: (22 / 14);
 }
 
-.btn-link p::first-letter {
+.btn-text::first-letter {
     text-transform: uppercase;
 }
 
