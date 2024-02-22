@@ -17,7 +17,7 @@
   .header-drawer span {
     display: block;
     width: rem(32);
-    height: rem(0.2);
+    height: rem(1);
     background: #fff;
     border-radius: rem(1);
     transition: 0.3s ease;
@@ -37,7 +37,7 @@
   }
   
   .header-drawer.is-open span:nth-child(1) {
-    top: rem(0.8);
+    top: rem(2);
     transform: rotate(45deg);
   }
   
