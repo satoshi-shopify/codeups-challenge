@@ -8,14 +8,15 @@
     @include mq('md') {
         padding-top: rem(100);
         padding-bottom: rem(76);
-        padding-right: rem(10);
-        padding-left: rem(10);
+        // padding-right: rem(10);
+        // padding-left: rem(10);
     }
 }
 
 .information-inner {
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    max-width: rem(600);
 }
 
 .information-inner .section-header .section-title {
@@ -35,7 +36,7 @@
 
 .information-items {
     margin-top: rem(27);
-    max-width: rem(345);
+    // max-width: rem(600);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -49,7 +50,7 @@
 }
 
 .information-img {
-    max-width: rem(345);
+    max-width: rem(600);
     width: 100%;
     overflow: hidden;
 

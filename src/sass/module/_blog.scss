@@ -7,18 +7,22 @@
     @include mq('md') {
         padding-top: rem(93);
         padding-bottom: initial;
-        padding-left: rem(10);
-        padding-right: rem(10);
         position: relative;
-        background-image: url(../images/common/blog-bgd.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top;
-        max-width: rem(1440);
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
+}
+
+.blog::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/blog-bgd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(500);
+    z-index: -1;
 }
 
 .blog::after {
@@ -40,12 +44,16 @@
 
 .blog-articles {
     margin-top: rem(28);
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq('md') {
         display: flex;
         justify-content: center;
         align-items: baseline;
         margin-top: rem(80);
+        max-width: initial;
     }
 }
 

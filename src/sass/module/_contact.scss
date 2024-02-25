@@ -8,8 +8,6 @@
     @include mq('md') {
         padding-top: rem(140);
         padding-bottom: rem(160);
-        padding-left: rem(10);
-        padding-right: rem(10);
     }
 }
 
@@ -34,13 +32,13 @@
 }
 
 .contact-inner {
+
+}
+
+.contact-contents {
     @include mq('md') {
         display: flex;
         align-items: center;
-        max-width: rem(1080);
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
         padding: rem(80) rem(112) rem(74) rem(50);
         box-shadow: rem(2) rem(2) rem(10) #D9D9D9;
     }
