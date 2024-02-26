@@ -25,7 +25,6 @@
 
     @include mq('md') {
         top: rem(100);
-        right: calc(50% - rem(1350) / 2);
         width: rem(313);/*画像の幅*/
         height: rem(148);/*画像の高さ*/
     }
