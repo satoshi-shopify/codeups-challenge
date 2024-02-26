@@ -29,7 +29,7 @@
     content: "";
     position: absolute;
     top: rem(24);
-    left: calc(50% - rem(1240) / 2);
+    left: calc(50% - min(50vw,rem(650)));
     background-image: url(../images/common/blog-fish.png);
     display: inline-block;
     width: rem(437);/*画像の幅*/

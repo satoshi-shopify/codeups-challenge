@@ -18,11 +18,13 @@
 }
 
 .pc-list a {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: inherit;
     padding-left: rem(20);
     padding-right: rem(20);
-    padding-top: rem(22);
     position: relative;
 }
 

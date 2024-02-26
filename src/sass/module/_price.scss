@@ -17,7 +17,7 @@
         content: "";
         position: absolute;
         bottom: rem(58);
-        left: calc(50% - rem(1237) / 2);
+        left: calc(50% - min(50vw,rem(650)));
         background-image: url(../images/common/price-fish.png);
         display: inline-block;
         width: rem(437);/*画像の幅*/
