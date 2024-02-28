@@ -103,6 +103,12 @@
     }
 }
 
+.swiper-button-prev:hover::after {
+    @include mq('md') {
+        opacity: 0.6;
+    }
+}
+
 .swiper-button-next {
     //位置はここで指定
     // top: 50%;
@@ -124,5 +130,11 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+    }
+}
+
+.swiper-button-next:hover::after {
+    @include mq('md') {
+        opacity: 0.6;
     }
 }

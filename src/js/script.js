@@ -113,15 +113,12 @@ const mySwiper = new Swiper('.swiper-campaign-js', { //名前を変える
         draggable: true //スクロールバーを直接表示できるようにする
     },
     allowTouchMove: false, // スワイプで表示の切り替えを無効に
-    slidesPerView: 'auto', // 一度に表示する枚数
-    breakpoints: { //画面幅による表示枚数と余白の指定
-        1700: {
-            slidesPerView: 5,
-          },
-        2300: {
-            slidesPerView: 6,
-        }
-    },
+    slidesPerView: 'auto', // 一度に表示する枚数。autoにして常にスライドが見えるようになっている
+    // breakpoints: { //画面幅による表示枚数と余白の指定
+    //     768: {
+    //         slidesPerView: 4,
+    //       }
+    // },
 });
 
 /* =================================================== 
