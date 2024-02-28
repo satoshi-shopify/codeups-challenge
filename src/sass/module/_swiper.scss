@@ -17,6 +17,7 @@
     width: calc(100% + (100vw - 345px) / 2);
     overflow: hidden;
     margin-right: initial;
+    padding-bottom: rem(5);
     
     @include mq('md') {
         width: calc(100% + (100vw - 1080px) / 2);
@@ -137,4 +138,8 @@
     @include mq('md') {
         opacity: 0.6;
     }
+}
+
+.swiper-container {
+    overflow: initial;
 }
