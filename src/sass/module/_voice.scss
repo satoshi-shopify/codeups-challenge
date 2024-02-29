@@ -55,7 +55,7 @@
     @include mq('md') {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: normal;
         max-width: initial;
         margin-top: rem(30);
     }

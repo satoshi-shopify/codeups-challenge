@@ -12,13 +12,14 @@
 }
 
 .article-img {
-    // max-width: rem(302);
     width: 100%;
     text-align: center;
     overflow: hidden;
 }
 
 .article-img img {
+    aspect-ratio: 1.49751244;
+    object-fit: cover;
     transition: transform .6s ease;
 }
 
