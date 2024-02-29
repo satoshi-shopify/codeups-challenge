@@ -4,34 +4,41 @@
 
 
 // campaign
+// swiper-container
 .swiper-container.swiper-container__campaign {
     position: relative;
+    width: calc(100% + (100vw - 345px) / 2);
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq('md') {
         margin-top: rem(15);
-    }
-}
-
-.swiper__campaign.swiper {
-    position: relative;
-    width: calc(100% + (100vw - 345px) / 2);
-    overflow: hidden;
-    margin-right: initial;
-    padding-bottom: rem(5);
-    
-    @include mq('md') {
         width: calc(100% + (100vw - 1080px) / 2);
     }
 }
 
+// swiper-wrapper
 .swiper-wrapper__campaign.swiper-wrapper {
     position: relative;
 }
 
+// swiper
+.swiper__campaign.swiper {
+    position: relative;
+    margin-right: calc(50% - 50vw);
+    padding-bottom: rem(5);
+
+    @include mq('md') {
+    }
+}
+
+// swiper-slide
 .swiper-slide.swiper-slide__campaign {
     max-width: rem(280);
     width: 100%;
     margin-right: rem(24);
+    margin-bottom: rem(33);
+    height: auto;
 
     @include mq('md') {
         max-width: rem(333);
