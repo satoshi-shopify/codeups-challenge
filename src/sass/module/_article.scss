@@ -2,8 +2,7 @@
 
 .article {
     display: block;
-    // max-width: rem(333);
-    width: 100%;
+    width: calc(33.33% - rem(40) * 2 / 3);
     box-shadow: rem(2) rem(2) rem(10) #D9D9D9;
 }
 

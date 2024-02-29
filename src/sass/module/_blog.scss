@@ -55,8 +55,7 @@
 
     @include mq('md') {
         display: flex;
-        justify-content: center;
-        align-items: baseline;
+        flex-wrap: wrap;
         margin-top: rem(80);
         max-width: initial;
     }
@@ -78,6 +77,18 @@
     @include mq('md') {
         margin-top: initial;
         margin-left: rem(40);
+    }
+}
+
+.blog-article:nth-child(4n) {
+    @include mq('md') {
+        margin-left: initial;
+    }
+}
+
+.blog-article:nth-child(n+4) {
+    @include mq('md') {
+        margin-top: rem(40);
     }
 }
 

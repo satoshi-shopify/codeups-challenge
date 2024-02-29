@@ -27,7 +27,13 @@
 }
 
 .slide-img img {
+    aspect-ratio: 1.4893617;
+    object-fit: cover;
     transition: transform .6s ease;
+
+    @include mq('md') {
+        aspect-ratio: 1.49327354;
+    }
 }
 
 .slide-img:hover img {

@@ -60,7 +60,13 @@
 }
 
 .information-img img {
+    aspect-ratio: 1.51982379;
+    object-fit: cover;
     transition: transform .6s ease;
+
+    @include mq('md') {
+        aspect-ratio: 1.51685393;
+    }
 }
 
 .information-img:hover img {
