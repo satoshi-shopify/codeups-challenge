@@ -94,7 +94,13 @@
 
 
 .card-img img {
+    aspect-ratio: 1.29059829;
+    object-fit: cover;
     transition: transform .6s ease;
+
+    @include mq('md') {
+        aspect-ratio: 1.28571429;
+    }
 }
 
 .card-img:hover img {
