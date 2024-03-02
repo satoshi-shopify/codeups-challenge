@@ -54,7 +54,8 @@
 
     @include mq('md') {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        // justify-content: center;
         align-items: normal;
         max-width: initial;
         margin-top: rem(30);
@@ -76,7 +77,19 @@
 
     @include mq('md') {
         margin-top: initial;
+    }
+}
+
+// voiceのカードは２の倍数をスタイル指定（pc）
+.voice-card:nth-child(2n) {
+    @include mq('md') {
         margin-left: rem(40);
+    }
+}
+
+.voice-card:nth-child(n + 3) {
+    @include mq('md') {
+        margin-top: rem(40);
     }
 }
 
