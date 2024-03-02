@@ -33,7 +33,7 @@
         content: "";
         position: absolute;
         top: rem(24);
-        left: calc(50% - min(50vw,rem(650)));
+        left: calc(50% - min(50vw,rem(621)));
         background-image: url(../images/common/blog-fish.png);
         display: inline-block;
         width: rem(437);/*画像の幅*/
@@ -61,6 +61,8 @@
         flex-wrap: wrap;
         margin-top: rem(80);
         max-width: initial;
+        padding-left: initial;
+        padding-right: initial;
     }
 }
 
@@ -102,6 +104,6 @@
 
     @include mq('md') {
         margin-right: rem(6);
-        margin-top: rem(77);
+        margin-top: rem(80);
     }
 }

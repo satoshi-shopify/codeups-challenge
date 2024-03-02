@@ -90,7 +90,7 @@ const mv_swiper = new Swiper(".js-top-swiper", {
 const mySwiper = new Swiper('.swiper-campaign-js', { //名前を変える
     loop: true, //最後→最初に戻るループ再生を有効に
     autoplay: { 
-        delay: 3000, //何秒ごとにスライドを動かすか
+        delay: 2000, //何秒ごとにスライドを動かすか
         stopOnLastSlide: false, //最後のスライドで自動再生を終了させるか
         disableOnInteraction: true, //ユーザーの操作時に止める
         reverseDirection: false, //自動再生を逆向きにする

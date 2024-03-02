@@ -17,7 +17,7 @@
         content: "";
         position: absolute;
         bottom: rem(58);
-        left: calc(50% - min(50vw,rem(650)));
+        left: calc(50% - min(50vw,rem(620)));
         background-image: url(../images/common/price-fish.png);
         display: inline-block;
         width: rem(437);/*画像の幅*/
@@ -83,6 +83,7 @@
 
     @include mq('md') {
     display: block;
+    max-width: rem(492);
     width: 100%;
     margin-left: rem(93);
     }

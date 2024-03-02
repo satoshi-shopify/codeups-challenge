@@ -16,7 +16,7 @@ footer {
     padding-right: rem(10);
 
     @include mq('md') {
-       max-width: initial;
+       max-width: rem(1130);
        padding-right: rem(25);
     }
 }
@@ -92,7 +92,7 @@ footer {
     margin-right: rem(16);
 
      @include mq('md') {
-        margin-right: rem(120);
+        margin-right: rem(34);
     }
 }
 
