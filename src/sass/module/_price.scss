@@ -73,6 +73,11 @@
     }
 }
 
+.price-img__sp img {
+    aspect-ratio: 1.51982379;
+    object-fit: cover;
+}
+
 .price-img__pc {
     display: none;
 
@@ -80,6 +85,14 @@
     display: block;
     width: 100%;
     margin-left: rem(93);
+    }
+}
+
+.price-img__pc img {
+
+    @include mq('md') {
+        aspect-ratio: 0.65951743;
+        object-fit: cover;
     }
 }
 
