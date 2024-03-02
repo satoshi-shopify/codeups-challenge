@@ -11,11 +11,13 @@ footer {
     }
 }
 
-.footer-inner {
+.footer-inner.inner {
     max-width: rem(600);
+    padding-right: rem(10);
 
     @include mq('md') {
        max-width: initial;
+       padding-right: rem(25);
     }
 }
 
@@ -127,7 +129,7 @@ footer {
     display: block;
     line-height: 1.125;
     color: $white;
-    padding-left: rem(24);
+    padding-left: rem(23);
     position: relative;
 }
 

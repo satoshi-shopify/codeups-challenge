@@ -32,7 +32,7 @@
 }
 
 .article-body {
-    padding-top: rem(18);
+    padding-top: rem(17);
 }
 
 .article-date {
@@ -42,10 +42,11 @@
 
 .article-title {
     font-size: rem(16);
-    padding-bottom: rem(4);
+    padding-bottom: rem(3);
     border-bottom: rem(1) solid $accent-color;
 }
 
 .article-text {
     margin-top: rem(16);
+    padding-right: rem(2);
 }
