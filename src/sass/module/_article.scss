@@ -2,8 +2,12 @@
 
 .article {
     display: block;
-    width: calc(33.33% - rem(40) * 2 / 3);
+    width: 100%;
     box-shadow: rem(2) rem(2) rem(10) #D9D9D9;
+    
+    @include mq('md') {
+        width: calc(33.33% - rem(40) * 2 / 3);
+    }
 }
 
 .article-inner {
