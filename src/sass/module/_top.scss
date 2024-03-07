@@ -21,10 +21,9 @@
     font-family: $en-font-family;
     font-size: rem(40);
     letter-spacing: 0.52em;
+    text-indent: 0.52em;
     text-transform: uppercase;
     text-align: center;
-    padding-left: rem(20);
-    padding-top: rem(5);
     line-height: 1.1;
 
     @include mq('md') {
