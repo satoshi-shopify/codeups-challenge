@@ -6,6 +6,14 @@
     }
 }
 
+.top-about {
+    margin-top: rem(80);
+
+    @include mq('md') {
+        margin-top: rem(140);
+    }
+}
+
 .about::after {
     @include mq('md') {
         content: "";
@@ -22,20 +30,7 @@
 }
 
 .about-inner {
-    padding-top: rem(43);
-    padding-bottom: rem(73);
-    // margin-left: auto;
-    // margin-right: auto;
     max-width: rem(600);
-    // width: 100%;
-
-    @include mq('md') {
-        padding-top: rem(98);
-        padding-bottom: rem(164);
-        // max-width: rem(1100);
-        // padding-right: rem(10);
-        // padding-left: rem(10);
-    }
 }
 
 .about-items {
