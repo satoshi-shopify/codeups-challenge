@@ -12,6 +12,14 @@
     }
 }
 
+.top-price {
+    margin-top: rem(82);
+
+    @include mq('md') {
+        margin-top: rem(142);
+    }
+}
+
 .price::after {
     @include mq('md') {
         content: "";
