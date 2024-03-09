@@ -35,10 +35,6 @@
 
 .about-items {
     @include mq('md') {
-        background-image: url(../images/common/about-ocean.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding-left: 18.42592592%;
         padding-top: rem(200);
         padding-bottom: rem(222);
