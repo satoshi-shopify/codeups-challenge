@@ -139,7 +139,7 @@ footer {
     margin-top: rem(24);
 }
 
-.footer-link::after {
+.footer-link span::after {
     content: '';
     /*絶対配置で線の位置を決める*/
     position: absolute;
@@ -155,7 +155,7 @@ footer {
     transform-origin: center top;/*上部中央基点*/
 }
 
-.footer-link:hover::after {
+.footer-link:hover.footer-link span::after {
     transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
