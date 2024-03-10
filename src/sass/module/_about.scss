@@ -18,7 +18,7 @@
     @include mq('md') {
         content: "";
         position: absolute;
-        bottom: rem(74);
+        bottom: rem(-85);
         right: calc(50% - min(50vw,rem(638)));
         background-image: url(../images/common/about-pc.png);
         display: inline-block;
@@ -34,32 +34,61 @@
 }
 
 .about-items {
-    @include mq('md') {
-        padding-left: 18.42592592%;
-        padding-top: rem(200);
-        padding-bottom: rem(222);
-        margin-top: rem(40);
-    }
+    margin-top: rem(29);
+    position: relative;
 }
 
 
 .about-img {
-    margin-top: rem(29);
     position: relative;
     max-width: rem(600);
     width: 100%;
+    aspect-ratio: 1.62735849;
 
     @include mq('md') {
-        display: none;
+        max-width: rem(1080);
+        aspect-ratio: 1.63388805;
+    }
+}
+
+.about-img1 {
+    top: 0;
+    left: 0;
+    aspect-ratio: 0.65979381;
+    object-fit: cover;
+    width: 37.1014493%;
+
+    @include mq('md') {
+        aspect-ratio: 0.66006601;
+        width: 37.037037%;
+    }
+}
+
+.about-img2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    aspect-ratio: 1.51075269;
+    object-fit: cover;
+    width: 81.4492754%;
+    z-index: -1;
+
+    @include mq('md') {
+        aspect-ratio: 1.51462995;
+        width: 81.4814815%;
     }
 }
 
 .about-body {
     margin-top: rem(41);
-
+    
     @include mq('md') {
         display: flex;
         margin-top: initial;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translateY(-50%);
     }
 }
 
