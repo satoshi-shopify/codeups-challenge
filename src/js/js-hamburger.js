@@ -6,9 +6,11 @@ jQuery(function ($) {
     if ($('.js-hamburger').hasClass('is-open')) {
       $('.js-drawer-menu').fadeOut();
       $(this).removeClass('is-open');
+      $('body').removeClass('is-hidden');
     } else {
       $('.js-drawer-menu').fadeIn();
       $(this).addClass('is-open');
+      $('body').addClass('is-hidden');
     }
   });
 

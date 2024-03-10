@@ -43,3 +43,7 @@ body {
   color: $font-color;
   background: $white;
 }
+
+body.is-hidden {
+  overflow: hidden;
+}
