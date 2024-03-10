@@ -4,6 +4,8 @@
     display: block;
     width: rem(107);
     margin-left: rem(12);
+    position: relative;
+    z-index: 1;
 
     @include mq('md') {
         width: rem(140);
