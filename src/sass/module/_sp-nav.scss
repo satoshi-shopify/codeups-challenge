@@ -7,8 +7,10 @@
     left: 0;
     right: 0;
     height: 100vh;
+    width: 100%;
     background-color: $accent-color;
-    overflow-y: scroll;
+    z-index: 100;
+    overflow: scroll;
 
     @include mq('md') {
         display: none;
@@ -18,6 +20,7 @@
 .sp-wrapper {
     display: flex;
     padding-top: rem(104);
+    padding-bottom: rem(100);
     max-width: rem(345);
     width: 100%;
     margin-left: auto;
@@ -25,7 +28,6 @@
 }
 
 .sp-items {
-    height: 100vh;
     width: 100%;
 }
 
