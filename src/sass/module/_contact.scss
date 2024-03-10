@@ -12,19 +12,20 @@
 .contact::after {
     content: "";
     position: absolute;
-    top: rem(54);
-    right: calc(50% - min(48vw,rem(676)));
+    top: rem(-30);
+    right: calc(50% - min(48vw,rem(200)));
     background-image: url(../images/common/contact-fish.png);
     display: inline-block;
-    width: rem(109);/*画像の幅*/
+    width: rem(107);/*画像の幅*/
     height: rem(50);/*画像の高さ*/
     background-size: contain;
     vertical-align: middle;
 
     @include mq('md') {
-        top: rem(100);
+        top: rem(-40);
+        right: calc(50% - min(48vw,rem(676)));
         width: rem(313);/*画像の幅*/
-        height: rem(148);/*画像の高さ*/
+        height: rem(146);/*画像の高さ*/
     }
 }
 
@@ -93,19 +94,22 @@
 }
 
 .contact-address {
-
+    white-space: nowrap;
 }
 
 .contact-tel {
     margin-top: rem(4);
+    white-space: nowrap;
 }
 
 .contact-time {
     margin-top: rem(4);
+    white-space: nowrap;
 }
 
 .contact-close {
     margin-top: rem(4);
+    white-space: nowrap;
 }
 
 .contact-map {
@@ -151,5 +155,8 @@
     text-align: center;
 }
 
+.contact-addresstag {
+    font-style: normal;
+}
 
 
