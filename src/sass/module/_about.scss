@@ -7,7 +7,7 @@
 }
 
 .top-about {
-    margin-top: rem(80);
+    margin-top: rem(84);
 
     @include mq('md') {
         margin-top: rem(140);
@@ -34,8 +34,12 @@
 }
 
 .about-items {
-    margin-top: rem(29);
+    margin-top: rem(28);
     position: relative;
+
+    @include mq('md') {
+        margin-top: rem(40);
+    }
 }
 
 
@@ -83,8 +87,8 @@
         display: flex;
         margin-top: initial;
         position: absolute;
-        top: 50%;
-        left: 15%;
+        top: 48%;
+        left: 18%;
         transform: translateY(-50%);
     }
 }
@@ -100,6 +104,7 @@
         font-size: rem(80);
         max-width: rem(400);
         line-height: 1.25;
+        white-space: nowrap;
     }
 }
 
@@ -126,12 +131,10 @@
 
 .about-btn {
     margin-top: rem(25);
-    margin-right: rem(17);
     text-align: center;
 
     @include mq('md') {
         margin-top: rem(38);
-        margin-right: rem(3);
     }
 }
 
