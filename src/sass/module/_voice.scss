@@ -54,12 +54,12 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+    gap: rem(40) rem(40);
+    
     @include mq('md') {
-        display: flex;
-        flex-wrap: wrap;
-        // justify-content: center;
-        align-items: normal;
         max-width: initial;
         margin-top: rem(30);
     }
@@ -80,13 +80,6 @@
 
     @include mq('md') {
         margin-top: initial;
-    }
-}
-
-// voiceのカードは２の倍数をスタイル指定（pc）
-.voice-card:nth-child(2n) {
-    @include mq('md') {
-        margin-left: rem(40);
     }
 }
 

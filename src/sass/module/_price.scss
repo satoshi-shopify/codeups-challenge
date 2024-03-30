@@ -50,9 +50,11 @@
     margin-left: auto;
     margin-right: auto;
 
+    
     @include mq('md') {
-        display: flex;
-        flex-direction: row-reverse;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(93);
         justify-content: center;
         margin-top: rem(39);
         max-width: initial;
@@ -90,10 +92,8 @@
     display: none;
 
     @include mq('md') {
+    order: 2;
     display: block;
-    max-width: rem(492);
-    width: 100%;
-    margin-left: rem(93);
     }
 }
 

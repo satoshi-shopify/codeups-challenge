@@ -55,10 +55,12 @@
     // ここのpaddingはarticleの横幅を
     padding-left: 5px;
     padding-right: 5px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+    gap: rem(40) rem(40);
 
     @include mq('md') {
-        display: flex;
-        flex-wrap: wrap;
         margin-top: rem(80);
         max-width: initial;
         padding-left: initial;
@@ -73,15 +75,6 @@
     @include mq('md') {
         margin-left: initial;
         margin-right: initial;
-    }
-}
-
-.blog-article + .blog-article {
-    margin-top: rem(39);
-
-    @include mq('md') {
-        margin-top: initial;
-        margin-left: rem(40);
     }
 }
 

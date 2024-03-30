@@ -44,7 +44,8 @@
     margin-right: auto;
 
     @include mq('md') {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         margin-top: rem(40);
     }

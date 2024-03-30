@@ -2,11 +2,6 @@
 
 .card {
     box-shadow: rem(2) rem(2) rem(10) #D9D9D9;
-    width: 100%;
-    
-    @include mq('md') {
-        width: calc(50% - rem(40) / 2);
-    }
 }
 
 .card-inner {
