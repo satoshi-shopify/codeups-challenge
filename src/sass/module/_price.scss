@@ -53,12 +53,11 @@
     
     @include mq('md') {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: rem(492) 1fr;
         gap: rem(93);
         justify-content: center;
         margin-top: rem(39);
         max-width: initial;
-        width: 100%;
     }
 }
 
