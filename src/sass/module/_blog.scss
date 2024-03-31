@@ -95,7 +95,6 @@
     text-align: center;
 
     @include mq('md') {
-        margin-right: rem(6);
         margin-top: rem(80);
     }
 }
