@@ -40,6 +40,6 @@ jQuery(function ($) {
 
   // ページ読み込み時とウィンドウリサイズ時に切り替え関数を実行
   $(document).ready(toggleDrawerMenu);
-  $(window).resize(toggleDrawerMenu);
+  // $(window).resize(toggleDrawerMenu);
 
 });

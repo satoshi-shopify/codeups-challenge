@@ -10,17 +10,22 @@
     width: 100%;
     background-color: $accent-color;
     z-index: 100;
-    overflow: scroll;
-
+    
     @include mq('md') {
         display: none;
     }
 }
 
+.sp-nav__scroll-container {
+    overflow: scroll;
+    height: calc(100vh - rem(80));
+    margin-top: rem(80);
+    padding-top: rem(24);
+    padding-bottom: rem(50);
+}
+
 .sp-wrapper {
     display: flex;
-    padding-top: rem(104);
-    padding-bottom: rem(100);
     max-width: rem(345);
     width: 100%;
     margin-left: auto;
