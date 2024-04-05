@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.top-text {
+.top__text {
     content: "";
     position: absolute;
     width: 100%;
@@ -16,7 +16,7 @@
     z-index: 2;
 }
 
-.top-title {
+.top__title {
     color: $white;
     font-family: $en-font-family;
     font-size: rem(40);
@@ -31,14 +31,14 @@
     }
 }
 
-.top-subtitle {
+.top__subtitle {
     color: $white;
     font-family: $en-font-family;
     font-size: rem(20);
     text-align: center;
 }
 
-.top-img {
+.top__img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -50,13 +50,13 @@
 }
 
 
-.top-img img {
+.top__img img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
-.top-pc {
+.top__pc {
     display: none;
 
     @include mq('md') {
@@ -64,7 +64,7 @@
     }
 }
 
-.top-sp {
+.top__sp {
     display: block;
 
     @include mq('md') {

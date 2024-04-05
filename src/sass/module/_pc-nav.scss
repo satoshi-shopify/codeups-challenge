@@ -13,11 +13,11 @@
     }
 }
 
-.pc-list {
+.pc-nav__list {
     height: inherit;
 }
 
-.pc-list a {
+.pc-nav__list a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,7 @@
     position: relative;
 }
 
-.pc-list a::after {
+.pc-nav__list a::after {
     content: '';
     /*絶対配置で線の位置を決める*/
     position: absolute;
@@ -44,26 +44,26 @@
     transform-origin: center top;/*上部中央基点*/
 }
 
-.pc-list a:hover::after {
+.pc-nav__list a:hover::after {
     transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
-.pc-list span {
+.pc-nav__list span {
     display: block;
     text-align: center;
     color: $white;
 }
 
-.pc-list a span:nth-child(1) {
+.pc-nav__list a span:nth-child(1) {
     font-size: rem(18);
     text-transform: capitalize;
     font-family: $en-font-family;
 }
 
-.pc-list__uppercase a span:nth-child(1) {
+.pc-nav__list--uppercase a span:nth-child(1) {
     text-transform: uppercase;
 }
 
-.pc-list a span:nth-child(2) {
+.pc-nav__list a span:nth-child(2) {
     font-size: rem(10);
 }
