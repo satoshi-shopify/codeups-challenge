@@ -26,10 +26,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-------------- Swiper JS -------------------------------------------------------------->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- inview.js -->
   <script src="./assets/js/jquery.inview.min.js"></script>
   <!-- ハンバーガーメニュー -->
@@ -40,81 +40,81 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header id="js-header">
-    <div class="header-inner">
+  <header id="js-header" class="header">
+    <div class="header__inner">
       <h1>
-        <a class="logo" href="#">
+        <a class="header__logo logo" href="#">
           <img src="./assets/images/common/header-icon.png" alt="ロゴ">
         </a>
       </h1>
       <!-- ハンバーガーメニュー -->
-      <button class="header-drawer js-hamburger">
+      <button class="header__header-drawer header-drawer js-hamburger">
           <span></span>
           <span></span>
           <span></span>
       </button>
       <!-- スマホ版メニュー -->
-      <div class="sp-nav js-drawer-menu">
+      <div class="header__sp-nav sp-nav js-drawer-menu">
         <div class="sp-nav__scroll-container">
-          <div class="sp-wrapper">
-            <ul class="sp-items">
-              <li class="sp-item sp-item__bold">
+          <div class="sp-nav__wrapper">
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#campaign">キャンペーン</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">ライセンス取得</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">貸切体験ダイビング</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">ナイトダイビング</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#about">私たちについて</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#information">ダイビング情報</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">ライセンス講習</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">体験ダイビング</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">ファンダイビング</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#blog">ブログ</a>
               </li>
             </ul>
-            <ul class="sp-items">
-              <li class="sp-item sp-item__bold">
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#voice">お客様の声</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#price">料金一覧</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">ライセンス講習</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">体験ダイビング</a>
               </li>
-              <li class="sp-item">
+              <li class="sp-nav__item">
                 <a href="#">ファンダイビング</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#">よくある質問</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#">プライバシー<br>ポリシー</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#">利用規約</a>
               </li>
-              <li class="sp-item sp-item__bold">
+              <li class="sp-nav__item sp-nav__item--bold">
                 <a href="#contact">お問い合わせ</a>
               </li>
             </ul>

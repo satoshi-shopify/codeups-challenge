@@ -24,7 +24,7 @@
     padding-bottom: rem(50);
 }
 
-.sp-wrapper {
+.sp-nav__wrapper {
     display: flex;
     max-width: rem(345);
     width: 100%;
@@ -32,19 +32,19 @@
     margin-right: auto;
 }
 
-.sp-items {
+.sp-nav__items {
     width: 100%;
 }
 
-.sp-item {
+.sp-nav__item {
 
 }
 
-.sp-items+.sp-items {
+.sp-nav__items+.sp-nav__items {
     margin-left: rem(7);
 }
 
-.sp-item a {
+.sp-nav__item a {
     display: block;
     color: $white;
     padding-left: rem(24);
@@ -52,7 +52,7 @@
     position: relative;
 }
 
-.sp-item a::after {
+.sp-nav__item a::after {
 
     @include mq('md') {
         content: '';
@@ -71,17 +71,17 @@
     }
 }
 
-.sp-item a:hover::after {
+.sp-nav__item a:hover::after {
     transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
-.sp-item.sp-item__bold a {
+.sp-nav__item.sp-nav__item--bold a {
     font-weight: bold;
     padding-bottom: rem(20);
     position: relative;
 }
 
-.sp-item.sp-item__bold a::before {
+.sp-nav__item.sp-nav__item--bold a::before {
     content: "";
     position: absolute;
     top: 5%;
