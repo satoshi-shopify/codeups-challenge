@@ -5,7 +5,7 @@
 
 // campaign
 // swiper-container
-.swiper-container.swiper-container__campaign {
+.swiper-container.swiper-container--campaign {
     position: relative;
     // width: calc(100% + (100vw - 345px) / 2);
     margin-left: auto;
@@ -19,7 +19,7 @@
 }
 
 // swiper
-.swiper__campaign.swiper {
+.swiper--campaign.swiper {
     position: relative;
     margin-right: calc(50% - 50vw);
     padding-bottom: rem(5);

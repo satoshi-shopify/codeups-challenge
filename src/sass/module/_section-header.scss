@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.section-title {
+.section-header__title {
     font-size: rem(32);
     font-family: $en-font-family;
     font-weight: 400;
@@ -15,12 +15,12 @@
     }
 }
 
-.section-title::first-letter {
+.section-header__title::first-letter {
     text-transform: uppercase;
     color: $accent-color;
 }
 
-.section-subtitle {
+.section-header__subtitle {
     font-size: rem(12);
     color: $accent-color;
     line-height: (18 / 12);
@@ -32,31 +32,31 @@
 }
 
 // ブログのみ
-.section-title.section-title__blog {
+.section-header__title.section-header__title--blog {
     @include mq('md') {
         color: $white;
     }
 }
 
-.section-title.section-title__blog::first-letter {
+.section-header__title.section-header__title--blog::first-letter {
     @include mq('md') {
         color: $white;
     }
 }
 
-.section-subtitle.section-subtitle__blog {
+.section-header__subtitle.section-header__subtitle--blog {
     @include mq('md') {
         color: $white;
     }
 }
 
 // コンタクトのみ
-.section-title.section-title__contact {
+.section-header__title.section-header__title--contact {
     font-size: rem(80);
     line-height: 0.9;
 }
 
-.section-subtitle.section-subtitle__contact {
+.section-header__subtitle.section-header__subtitle--contact {
     margin-top: initial;
     line-height: 1;
 }
