@@ -57,14 +57,14 @@
     padding-right: 5px;
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
     gap: rem(40) rem(40);
-
+    
     @include mq('md') {
         margin-top: rem(80);
         max-width: initial;
         padding-left: initial;
         padding-right: initial;
+        grid-template-columns: repeat(3 , 1fr);
     }
 }
 
