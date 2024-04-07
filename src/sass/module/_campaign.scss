@@ -22,12 +22,3 @@
 .campaign__header {
     margin-bottom: rem(2);
 }
-
-.campaign-btn {
-    text-align: center;
-    margin-top: rem(32);
-
-    @include mq('md') {
-    margin-top: rem(63);
-    }
-}

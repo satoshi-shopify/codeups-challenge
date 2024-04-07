@@ -29,11 +29,11 @@
     }
 }
 
-.about-inner {
+.about__inner {
     max-width: rem(600);
 }
 
-.about-items {
+.about__items {
     margin-top: rem(28);
     position: relative;
 
@@ -43,7 +43,7 @@
 }
 
 
-.about-img {
+.about__img {
     position: relative;
     aspect-ratio: 1.62735849;
 
@@ -52,7 +52,7 @@
     }
 }
 
-.about-img1 {
+.about__img1 {
     top: 0;
     left: 0;
     aspect-ratio: 0.65979381;
@@ -65,7 +65,7 @@
     }
 }
 
-.about-img2 {
+.about__img2 {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -80,7 +80,7 @@
     }
 }
 
-.about-body {
+.about__body {
     margin-top: rem(41);
     
     @include mq('md') {
@@ -93,7 +93,7 @@
     }
 }
 
-.about-title {
+.about__title {
     font-size: rem(40);
     color: $accent-color;
     font-family: $en-font-family;
@@ -108,18 +108,18 @@
     }
 }
 
-.about-title span {
+.about__title span {
     text-transform: uppercase;
 }
 
-.about-content {
+.about__content {
     @include mq('md') {
         max-width: rem(400);
         margin-left: rem(40);
     }
 }
 
-.about-text {
+.about__text {
     font-size: rem(16);
     margin-top: rem(16);
 
@@ -129,14 +129,6 @@
     }
 }
 
-.about-btn {
-    margin-top: rem(25);
-    text-align: center;
-
-    @include mq('md') {
-        margin-top: rem(38);
-    }
-}
 
 
 

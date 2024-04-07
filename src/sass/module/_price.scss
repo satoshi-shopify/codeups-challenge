@@ -163,11 +163,3 @@
     padding-right: rem(20);
 }
 
-.price-btn {
-    margin-top: rem(39);
-    text-align: center;
-
-    @include mq('md') {
-        margin-top: rem(80);
-    }
-}

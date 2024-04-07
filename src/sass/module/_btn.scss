@@ -1,6 +1,65 @@
 @use "global" as *;
 
 .btn {
+
+}
+
+.btn--campaign {
+    text-align: center;
+    margin-top: rem(32);
+    
+    @include mq('md') {
+        margin-top: rem(63);
+    }
+}
+
+.btn--about {
+    margin-top: rem(25);
+    text-align: center;
+    
+    @include mq('md') {
+        margin-top: rem(38);
+    }
+}
+
+.btn--information {
+    margin-top: rem(39);
+    text-align: center;
+}
+
+.btn--blog {
+    margin-top: rem(39);
+    text-align: center;
+
+    @include mq('md') {
+        margin-top: rem(80);
+    }
+}
+
+.btn--voice {
+    margin-top: rem(38);
+    text-align: center;
+
+    @include mq('md') {
+        margin-top: rem(80);
+    }
+}
+
+.btn--price {
+    margin-top: rem(39);
+    text-align: center;
+
+    @include mq('md') {
+        margin-top: rem(80);
+    }
+}
+
+.btn--contact {
+    margin-top: rem(38);
+    text-align: center;
+}
+
+.btn__link {
     padding: rem(16) rem(40);
     background-color: $accent-color;
     display: inline-block;
@@ -9,7 +68,7 @@
     z-index: 1;
 }
 
-.btn::after {
+.btn__link::after {
     background: $white;
     position: absolute;
     top: 0;
@@ -23,19 +82,19 @@
     z-index: -1;
 }
 
-.btn:hover .btn-text {
+.btn__link:hover .btn__text {
     color: $accent-color;
 }
 
-.btn:hover .btn-allow span {
+.btn:hover .btn__allow span {
     background: $accent-color;
 }
 
-.btn:hover::after {
+.btn__link:hover::after {
     transform: scale(1, 1);
 }
 
-.btn::before {
+.btn__link::before {
     content: "";
     position: absolute;
     top: rem(4);
@@ -46,26 +105,26 @@
     z-index: -1;
 }
 
-.btn-flex {
+.btn__flex {
     display: flex;
 }
 
-.btn-text {
+.btn__text {
     font-size: rem(14);
     font-family: $en-font-family;
     color: $white;
     line-height: (22 / 14);
 }
 
-.btn-text::first-letter {
+.btn__text::first-letter {
     text-transform: uppercase;
 }
 
-.btn-allow {
+.btn__allow {
     margin-left: rem(8);
 }
 
-.btn-allow span {
+.btn__allow span {
     display: block;
     background: $white;
     border-radius: rem(1);
@@ -73,13 +132,13 @@
     transition: all 0.3s;
 }
 
-.btn-allow span:nth-child(1) {
+.btn__allow span:nth-child(1) {
     width: rem(40);
     height: rem(1);
     top: rem(10);
 }
 
-.btn-allow span:nth-child(2) {
+.btn__allow span:nth-child(2) {
     width: rem(8);
     height: rem(1);
     right: rem(-33);
