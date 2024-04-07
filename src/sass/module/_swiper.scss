@@ -30,13 +30,13 @@
 }
 
 // swiper-wrapper
-.swiper-wrapper__campaign.swiper-wrapper {
+.swiper-wrapper--campaign.swiper-wrapper {
     position: relative;
 }
 
 
 // swiper-slide
-.swiper-slide.swiper-slide__campaign {
+.swiper-slide.swiper-slide--campaign {
     max-width: rem(280);
     width: 100%;
     margin-right: rem(24);
