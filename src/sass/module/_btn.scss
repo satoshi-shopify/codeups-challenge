@@ -4,61 +4,6 @@
 
 }
 
-.btn--campaign {
-    text-align: center;
-    margin-top: rem(32);
-    
-    @include mq('md') {
-        margin-top: rem(63);
-    }
-}
-
-.btn--about {
-    margin-top: rem(25);
-    text-align: center;
-    
-    @include mq('md') {
-        margin-top: rem(38);
-    }
-}
-
-.btn--information {
-    margin-top: rem(39);
-    text-align: center;
-}
-
-.btn--blog {
-    margin-top: rem(39);
-    text-align: center;
-
-    @include mq('md') {
-        margin-top: rem(80);
-    }
-}
-
-.btn--voice {
-    margin-top: rem(38);
-    text-align: center;
-
-    @include mq('md') {
-        margin-top: rem(80);
-    }
-}
-
-.btn--price {
-    margin-top: rem(39);
-    text-align: center;
-
-    @include mq('md') {
-        margin-top: rem(80);
-    }
-}
-
-.btn--contact {
-    margin-top: rem(38);
-    text-align: center;
-}
-
 .btn__link {
     padding: rem(16) rem(40);
     background-color: $accent-color;

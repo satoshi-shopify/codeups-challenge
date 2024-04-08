@@ -129,6 +129,14 @@
     }
 }
 
+.about__btn {
+    margin-top: rem(25);
+    text-align: center;
+    
+    @include mq('md') {
+        margin-top: rem(38);
+    }
+}
 
 
 
