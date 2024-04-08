@@ -29,11 +29,11 @@
     }
 }
 
-.contact-inner {
+.contact__inner {
 
 }
 
-.contact-contents {
+.contact__contents {
     @include mq('md') {
         display: flex;
         align-items: center;
@@ -42,21 +42,21 @@
     }
 }
 
-.contact-left {
+.contact__left {
     @include mq('md') {
         padding-right: rem(82);
         border-right: rem(1) solid $accent-color;
     }
 }
 
-.contact-right {
+.contact__right {
 
     @include mq('md') {
         padding-left: rem(81);
     }
 }
 
-.contact-icon {
+.contact__icon {
     max-width: rem(174);
     width: 100%;
     padding-bottom: rem(6);
@@ -69,7 +69,7 @@
     }
 }
 
-.contact-body {
+.contact__body {
     padding-top: rem(14);
     border-top: rem(1) solid $accent-color;
     max-width: rem(295);
@@ -84,7 +84,7 @@
     }
 }
 
-.contact-info {
+.contact__info {
     font-size: rem(16);
     text-align: center;
 
@@ -93,26 +93,26 @@
     }
 }
 
-.contact-address {
+.contact__address {
     white-space: nowrap;
 }
 
-.contact-tel {
+.contact__tel {
     margin-top: rem(4);
     white-space: nowrap;
 }
 
-.contact-time {
+.contact__time {
     margin-top: rem(4);
     white-space: nowrap;
 }
 
-.contact-close {
+.contact__close {
     margin-top: rem(4);
     white-space: nowrap;
 }
 
-.contact-map {
+.contact__map {
     margin-top: rem(16);
     text-align: center;
 
@@ -122,7 +122,7 @@
     }
 }
 
-.contact-iframe {
+.contact__iframe {
     max-width: rem(295);
     width: 100%;
     height: rem(160);
@@ -134,7 +134,7 @@
     }
 }
 
-.contact-title {
+.contact__title {
     margin-top: rem(40);
 
     @include mq('md') {
@@ -142,14 +142,14 @@
     }
 }
 
-.contact-text {
+.contact__text {
     text-align: center;
     color: $accent-color;
     font-size: rem(14);
     margin-top: rem(10);
 }
 
-.contact-addresstag {
+.contact__addresstag {
     font-style: normal;
 }
 
