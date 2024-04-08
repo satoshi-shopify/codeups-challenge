@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.totop {
+.to-top {
     display: inline-block;
     width: rem(48);
     height: rem(48);
@@ -22,21 +22,21 @@
     }
 }
 
-.totop:hover {
+.to-top:hover {
     background-color: $accent-color;
     border: rem(1) solid $white;
 }
 
-.totop:hover .totop-allow span {
+.to-top:hover .to-top__allow span {
     background: $white;
 }
-  
-.totop.is-show {
+
+.to-top.is-show {
     opacity: 1;
     visibility: visible;
 }
 
-.totop-allow span {
+.to-top__allow span {
     display: block;
     background: $accent-color;
     border-radius: rem(1);
@@ -44,7 +44,7 @@
     transition: all 0.3s;
 }
 
-.totop-allow span:nth-child(1) {
+.to-top__allow span:nth-child(1) {
     width: rem(28);
     height: rem(1);
     top: rem(24);
@@ -58,7 +58,7 @@
     }
 }
 
-.totop-allow span:nth-child(2) {
+.to-top__allow span:nth-child(2) {
     width: rem(8);
     height: rem(1);
     left: rem(17);
