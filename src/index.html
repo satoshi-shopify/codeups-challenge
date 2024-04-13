@@ -628,13 +628,12 @@
       </div>
 
       <div class="price__contents">
-        
-        <div class="price__img price__img--sp colorbox">
-          <img src="./assets/images/common/price-sp.png" alt="priceのスマホ用写真">
-        </div>
-        <div class="price__img price__img--pc colorbox">
-          <img src="./assets/images/common/price-pc.png" alt="priceのPC用写真">
-        </div>
+
+        <picture class="price__img colorbox">
+          <source class="price__img-pc" media="(min-width: 768px)" srcset="./assets/images/common/price-pc.png" alt="priceのPC用写真">
+          <source class="price__img-sp" media="(max-width: 767px)" srcset="./assets/images/common/price-sp.png" alt="priceのスマホ用写真">
+          <img src="./assets/images/common/price-sp.png" alt="画像がありません">
+        </picture>
   
         <div class="price__items">
           <div class="price__item">
