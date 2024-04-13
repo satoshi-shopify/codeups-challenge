@@ -87,7 +87,7 @@ const mv_swiper = new Swiper(".js-top-swiper", {
 });
 
 // swiper campaignセクション
-const mySwiper = new Swiper('.swiper-campaign-js', { //名前を変える
+const mySwiper = new Swiper('.js-swiper-campaign', { //名前を変える
     loop: true, //最後→最初に戻るループ再生を有効に
     autoplay: { 
         delay: 2000, //何秒ごとにスライドを動かすか

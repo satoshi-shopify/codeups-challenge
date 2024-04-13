@@ -17,7 +17,7 @@
 }
 
 // swiper
-.swiper--campaign.swiper {
+.campaign__swiper {
     position: relative;
     margin-right: calc(50% - 50vw);
     padding-bottom: rem(5);
@@ -28,13 +28,13 @@
 }
 
 // swiper-wrapper
-.swiper-wrapper--campaign.swiper-wrapper {
+.campaign__swiper-wrapper {
     position: relative;
 }
 
 
 // swiper-slide
-.swiper-slide.swiper-slide--campaign {
+.campaign__swiper-slide {
     max-width: rem(280);
     width: 100%;
     margin-right: rem(24);
