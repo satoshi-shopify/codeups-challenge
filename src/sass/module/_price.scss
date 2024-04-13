@@ -50,10 +50,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: rem(29);
-    overflow: hidden;
-    
+    display: grid;
+
     @include mq('md') {
-        display: grid;
         grid-template-columns: rem(492) 1fr;
         gap: rem(93);
         justify-content: center;
@@ -63,13 +62,14 @@
     }
 }
 
-// price-img pictureタグ使用
+// price__img pictureタグ使用
+// price__imgにoverflow:hidden;を入れているが、hover時に画像がはみ出てしまう
 
 .price__img {
+    overflow: hidden;
 
     @include mq('md') {
         order: 2;
-        overflow: hidden;
     }
 }
 
