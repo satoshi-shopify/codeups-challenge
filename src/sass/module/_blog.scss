@@ -68,16 +68,6 @@
     }
 }
 
-.blog__article {
-    margin-left: auto;
-    margin-right: auto;
-
-    @include mq('md') {
-        margin-left: initial;
-        margin-right: initial;
-    }
-}
-
 .blog__article:nth-child(4n) {
     @include mq('md') {
         margin-left: initial;
