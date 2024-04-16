@@ -1,0 +1,88 @@
+@use "global" as *;
+
+.btn2 {
+
+}
+
+.btn__link2 {
+    padding: rem(16) rem(40);
+    background-color: $accent-color;
+    display: inline-block;
+    position: relative;
+    border: rem(1) solid $accent-color;
+    z-index: 1;
+}
+
+.btn__text2 {
+    font-size: rem(14);
+    font-family: $en-font-family;
+    color: $white;
+    line-height: (22 / 14);
+    padding-right: rem(40);
+    position: relative;
+}
+
+.btn__text2::first-letter {
+    text-transform: uppercase;
+}
+
+.btn__text2::after {
+    content: "";
+    position: absolute;
+    top: 22%;
+    right: rem(-8);
+    width: rem(42);
+    height: rem(8);
+
+    // hover後の矢印の色を変更するための準備 mask-image
+    -webkit-mask-image: url("../images/common/btn-arrow.svg");
+    mask-image: url("../images/common/btn-arrow.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 40px auto;
+    background-color: #fff;
+}
+
+// 外枠の緑色枠
+.btn__link2::before {
+    content: "";
+    position: absolute;
+    top: rem(4);
+    right: rem(-4);
+    width: 100%;
+    height: rem(58);
+    border: rem(1) solid $accent-color;
+    z-index: -1;
+}
+
+// hover前に見えない白背景
+.btn__link2::after {
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+// hover後のスタイル
+.btn__link2:hover::after {
+    transform: scale(1, 1);
+}
+
+.btn__link2:hover .btn__text2 {
+    color: $accent-color;
+}
+
+// hover後の矢印の色
+.btn__link2:hover .btn__text2::after {
+    background-color: $accent-color;
+}
+
