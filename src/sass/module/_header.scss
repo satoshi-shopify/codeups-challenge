@@ -28,6 +28,19 @@ header {
     }
 }
 
+.header__logo-link {
+    display: block;
+    width: rem(107);
+    margin-left: rem(12);
+    position: relative;
+    z-index: 999;
+
+    @include mq('md') {
+        width: rem(140);
+        padding-top: rem(8);
+    }
+}
+
 header.is-scroll {
     background-color: #9A9A9A;
 }
