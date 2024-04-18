@@ -56,18 +56,18 @@
     object-fit: cover;
 }
 
-.top__pc {
-    display: none;
+// .top__pc {
+//     display: none;
 
-    @include mq('md') {
-        display: block;
-    }
-}
+//     @include mq('md') {
+//         display: block;
+//     }
+// }
 
-.top__sp {
-    display: block;
+// .top__sp {
+//     display: block;
 
-    @include mq('md') {
-        display: none;
-    }
-}
+//     @include mq('md') {
+//         display: none;
+//     }
+// }
