@@ -4,7 +4,7 @@
 
 }
 
-.btn__link2 {
+.btn__link {
     padding: rem(16) rem(40);
     background-color: $accent-color;
     display: inline-block;
@@ -13,7 +13,7 @@
     z-index: 1;
 }
 
-.btn__text2 {
+.btn__text {
     font-size: rem(14);
     font-family: $en-font-family;
     color: $white;
@@ -23,11 +23,11 @@
     position: relative;
 }
 
-.btn__text2::first-letter {
+.btn__text::first-letter {
     text-transform: uppercase;
 }
 
-.btn__text2::after {
+.btn__text::after {
     content: "";
     position: absolute;
     top: 22%;
@@ -47,7 +47,7 @@
 }
 
 // 外枠の緑色枠
-.btn__link2::before {
+.btn__link::before {
     content: "";
     position: absolute;
     top: rem(4);
@@ -59,7 +59,7 @@
 }
 
 // hover前に見えない白背景
-.btn__link2::after {
+.btn__link::after {
     background: $white;
     position: absolute;
     top: 0;
@@ -74,16 +74,16 @@
 }
 
 // hover後のスタイル
-.btn__link2:hover::after {
+.btn__link:hover::after {
     transform: scale(1, 1);
 }
 
-.btn__link2:hover .btn__text2 {
+.btn__link:hover .btn__text {
     color: $accent-color;
 }
 
 // hover後の矢印の色
-.btn__link2:hover .btn__text2::after {
+.btn__link:hover .btn__text::after {
     background-color: $accent-color;
 }
 
