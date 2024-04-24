@@ -27,15 +27,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-------------- Swiper JS -------------------------------------------------------------->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- inview.js -->
-  <script src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/jquery.inview.min.js"></script>
   <!-- ハンバーガーメニュー -->
-  <script src="./assets/js/js-hamburger.js"></script>
+  <script defer src="./assets/js/js-hamburger.js"></script>
   <!-- swiper -->
-  <script src="./assets/js/js-swiper.js"></script>
+  <script defer src="./assets/js/js-swiper.js"></script>
   <!-- オリジナルjs -->
   <script defer src="./assets/js/script.js"></script>
 </head>
@@ -179,7 +179,7 @@
     <!-- ファーストビュー -->
     <section class="top" id="top">
         <h2 class="top__text">
-          <div class="top__title">diving</div>
+          <p class="top__title">diving</p>
           <p class="top__subtitle">into the ocean</p>
         </h2>
       <div class="top__swiper-container">
@@ -226,10 +226,10 @@
     <section class="campaign top-campaign" id="campaign">
       <div class="campaign__inner inner">
         <!-- セクションヘッダー campaign -->
-        <h2 class="campaign__section-header section-header">
+        <div class="campaign__section-header section-header">
           <div class="section-header__title">campaign</div>
-          <div class="section-header__subtitle">キャンペーン</div>
-        </h2>
+          <h2 class="section-header__subtitle">キャンペーン</h2>
+        </div>
         <!-- swiper -->
         <div class="campaign__swiper-container">
           <div class="swiper-button-prev"></div>
@@ -450,9 +450,9 @@
           </div>
           <div class="information__body">
             <div class="information__title">ライセンス講習</div>
-            <div class="information__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
+            <p class="information__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
               正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
-            </div>
+            </p>
             
         <!-- btn -->
       <div class="information__btn btn">
