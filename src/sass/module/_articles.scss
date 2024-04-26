@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.articles {
+    display: grid;
+    gap: rem(40) rem(40);
+
+    @include mq('md') {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
