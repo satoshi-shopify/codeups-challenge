@@ -1,10 +1,6 @@
 @use "global" as *;
 
-.btn2 {
-
-}
-
-.btn__link {
+.btn {
     padding: rem(16) rem(40);
     background-color: $accent-color;
     display: inline-block;
@@ -47,7 +43,7 @@
 }
 
 // 外枠の緑色枠
-.btn__link::before {
+.btn::before {
     content: "";
     position: absolute;
     top: rem(4);
@@ -59,7 +55,7 @@
 }
 
 // hover前に見えない白背景
-.btn__link::after {
+.btn::after {
     background: $white;
     position: absolute;
     top: 0;
@@ -74,16 +70,16 @@
 }
 
 // hover後のスタイル
-.btn__link:hover::after {
+.btn:hover::after {
     transform: scale(1, 1);
 }
 
-.btn__link:hover .btn__text {
+.btn:hover .btn__text {
     color: $accent-color;
 }
 
 // hover後の矢印の色
-.btn__link:hover .btn__text::after {
+.btn:hover .btn__text::after {
     background-color: $accent-color;
 }
 
