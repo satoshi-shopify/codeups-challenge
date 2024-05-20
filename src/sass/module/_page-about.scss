@@ -1,10 +1,18 @@
 @use "global" as *;
 
-.l-about-category {
+.page-about {
+
+}
+
+.page-about__inner {
+    
+}
+
+.breadCrumb {
     margin-top: rem(8);
 }
 
-.l-about-main {
+.page-about__main {
     position: relative;
     margin-top: rem(52);
 
@@ -13,14 +21,14 @@
     }
 }
 
-.l-about-main::before {
+.page-about__main::before {
     content: "";
     position: absolute;
     background-image: url(../images/common/voice-fish.png);
     display: inline-block;
     background-size: contain;
     vertical-align: middle;
-    top: rem(-70);
+    top: rem(-22);
     left: calc(50% - min(48vw,rem(200)));
     width: rem(107);/*画像の幅*/
     height: rem(50);/*画像の高さ*/
@@ -31,4 +39,8 @@
         width: rem(301);/*画像の幅*/
         height: rem(138);/*画像の高さ*/
     }
+}
+
+.page-about__contact {
+    margin-top: rem(500);
 }
