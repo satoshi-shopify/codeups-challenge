@@ -42,6 +42,10 @@
     }
 }
 
+.page-about-main .about__items {
+    margin-top: initial;
+}
+
 
 .about__img {
     position: relative;
@@ -113,8 +117,6 @@
 }
 
 .about__body.about__body--page-about {
-    display: flex;
-    flex-direction: column;
     margin-top: rem(40);
 
         @include mq('md') {

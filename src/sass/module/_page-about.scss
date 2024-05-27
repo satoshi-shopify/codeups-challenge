@@ -8,20 +8,20 @@
     
 }
 
-.breadCrumb {
+.page-about-breadCrumb {
     margin-top: rem(8);
 }
 
-.page-about__main {
-    position: relative;
+.page-about-main {
     margin-top: rem(52);
+    position: relative;
 
     @include mq('md') {
         margin-top: rem(150);
     }
 }
 
-.page-about__main::before {
+.page-about-main::before {
     content: "";
     position: absolute;
     background-image: url(../images/common/voice-fish.png);
@@ -43,4 +43,12 @@
 
 .page-about__contact {
     margin-top: rem(500);
+}
+
+.page-about__gallery {
+    margin-top: rem(40);
+
+    @include mq('md') {
+        margin-top: rem(120);
+    }
 }
