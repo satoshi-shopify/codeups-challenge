@@ -4,6 +4,37 @@
 
 }
 
+.page-about .top {
+    height: rem(460);
+
+    @include mq('md') {
+        height: rem(548);
+    }
+}
+
+.page-about__title.top__title {
+    text-transform: initial;
+    font-size: rem(40);
+    font-weight: normal;
+    letter-spacing: normal;
+
+    @include mq('md') {
+        font-size: rem(80);
+    }
+}
+
+.page-about__title.top__title::first-letter {
+    text-transform: uppercase;
+}
+
+.page-about__img.top__img {
+    height: rem(460);
+
+    @include mq('md') {
+        height: rem(548);
+    }
+}
+
 .page-about__inner {
     
 }
@@ -42,7 +73,11 @@
 }
 
 .page-about__contact {
-    margin-top: rem(500);
+    margin-top: rem(80);
+
+    @include mq('md') {
+        margin-top: rem(100);
+    }
 }
 
 .page-about__gallery {
