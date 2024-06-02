@@ -1,0 +1,26 @@
+@use "global" as *;
+
+
+.page-information-main::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/voice-fish.png);
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    top: rem(-22);
+    left: calc(50% - min(48vw,rem(200)));
+    width: rem(107);/*画像の幅*/
+    height: rem(50);/*画像の高さ*/
+
+    @include mq('md') {
+        top: rem(-70);
+        left: calc(50% - min(48vw,rem(620)));
+        width: rem(301);/*画像の幅*/
+        height: rem(138);/*画像の高さ*/
+    }
+}
+
+.page-information-breadCrumb {
+    margin-top: rem(8);
+}

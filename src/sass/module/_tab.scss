@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.tab {
+    display: inline-block;
+}
+
+.tab__text {
+    display: inline-block;
+    padding: rem(29) rem(30) rem(26) rem(102);
+    background-color: #DDF0F1;
+    color: $accent-color;
+    position: relative;
+}
+
+.tab__text::before {
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: rem(18);
+    width: rem(64);
+    height: rem(64);
+
+}
+
+.tab__text--first.tab__text::before {
+    // hover後の矢印の色を変更するための準備 mask-image
+    -webkit-mask-image: url("../images/common/page-information-tab1.svg");
+    mask-image: url("../images/common/page-information-tab1.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 64px auto;
+    background-color: $accent-color;
+}
+
+.tab__text--second.tab__text::before {
+    // hover後の矢印の色を変更するための準備 mask-image
+    -webkit-mask-image: url("../images/common/page-information-tab2.svg");
+    mask-image: url("../images/common/page-information-tab2.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 64px auto;
+    background-color: $accent-color;
+}
+
+.tab__text--third.tab__text::before {
+    // hover後の矢印の色を変更するための準備 mask-image
+    -webkit-mask-image: url("../images/common/page-information-tab3.svg");
+    mask-image: url("../images/common/page-information-tab3.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 64px auto;
+    background-color: $accent-color;
+}
+
+.tab__text:hover::before {
+    background-color: $white;
+}
+
+// ホバー時
+.tab__text:hover {
+    background-color: $accent-color;
+    color: $white;
+}

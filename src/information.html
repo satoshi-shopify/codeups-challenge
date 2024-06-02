@@ -34,7 +34,7 @@
   <script defer src="./assets/js/jquery.inview.min.js"></script>
   <!-- ハンバーガーメニュー -->
   <script defer src="./assets/js/js-hamburger.js"></script>
-  <!-- swiper -->
+  <!-- swiper js -->
   <script defer src="./assets/js/js-swiper.js"></script>
   <!-- オリジナルjs -->
   <script defer src="./assets/js/script.js"></script>
@@ -175,183 +175,47 @@
     </div>
   </header>
   <!-- メインの始まり -->
-  <main>
+  <main class="page-about">
     <!-- ファーストビュー -->
     <section class="top" id="top">
         <div class="top__text">
-          <h2 class="top__title">diving</h2>
-          <h3 class="top__subtitle">into the ocean</h3>
+            <h2 class="top__title page-about__title">information</h2>
         </div>
-      <div class="top__swiper-container">
-        <div class="swiper js-top-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- スライドの中身 -->
-              <picture class="top__img">
-                <source class="top__img-pc" media="(min-width: 768px)" srcset="./assets/images/common/top-pc-1.png" alt="海亀が泳いでいる写真">
-                <source class="top__img-sp" media="(max-width: 767px)" srcset="./assets/images/common/top-sp-1.png" alt="海亀が泳いでいる写真">
-                <img src="./assets/images/common/top-pc-1.png" alt="topのPC用写真">
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <!-- スライドの中身 -->
-              <picture class="top__img">
-                <source class="top__img-pc" media="(min-width: 768px)" srcset="./assets/images/common/top-pc-2.png" alt="海亀とダイバーの写真">
-                <source class="top__img-sp" media="(max-width: 767px)" srcset="./assets/images/common/top-sp-2.png" alt="海亀とダイバーの写真">
-                <img src="./assets/images/common/top-pc-1.png" alt="topのPC用写真">
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <!-- スライドの中身 -->
-              <picture class="top__img">
-                <source class="top__img-pc" media="(min-width: 768px)" srcset="./assets/images/common/top-pc-3.png" alt="青天の空と海の写真">
-                <source class="top__img-sp" media="(max-width: 767px)" srcset="./assets/images/common/top-sp-3.png" alt="青天の空と海の写真">
-                <img src="./assets/images/common/top-pc-1.png" alt="topのPC用写真">
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <!-- スライドの中身 -->
-              <picture class="top__img">
-                <source class="top__img-pc" media="(min-width: 768px)" srcset="./assets/images/common/top-pc-4.png" alt="白い砂浜と海の写真">
-                <source class="top__img-sp" media="(max-width: 767px)" srcset="./assets/images/common/top-sp-4.png" alt="白い砂浜と海の写真">
-                <img src="./assets/images/common/top-pc-1.png" alt="topのPC用写真">
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
+        <img class="page-about__img top__img" src="./assets/images/common/page-information-top.png" alt="">
     </section>
 
-<div class="l-campaign-inner inner">
-  <!-- campaignページの中のスライドということ -->
-  <div class="l-campaign-slides">
-    <!-- スライドの中身 -->
-    <div class="l-campaign-slide">
-      <a href="#" class="slide">
-          <div class="slide__img">
-            <img src="./assets/images/common/campaign1.png" alt="色とりどりの魚の写真">
+        <!-- パンくず -->
+        <div class="page-information-breadCrumb breadCrumb">
+          <div class="page-information-breadCrumb__inner inner">
+            <p>TOP > ダイビング情報</p>
           </div>
-          <div class="slide__body">
-            <div class="slide__labelwrapper">
-              <div class="slide__label">ライセンス講習</div>
-            </div>
-            <div class="slide__title">ライセンス取得</div>
-            <div class="slide__info">全部コミコミ(お一人様)</div>
-            <div class="slide__price">
-              <div class="slide__oldprice">¥56,000</div>
-              <div class="slide__newprice">¥46,000</div>
-            </div>
-            <p class="l-campaign-slide__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-            </p>
-            <p class="l-campaign-slide__date">2023/6/1-9/30</p>
-            <p class="l-campaign-slide__contact">ご予約・お問い合わせはコチラ</p>
-            <!-- btn -->
-            <div class="l-campaign-slide__btn">
-              <a href="#" class="btn">
-                <span class="btn__text">view more</span>
+        </div>
+        <!-- mainセクション -->
+        <section class="page-information-main">
+          <div class="page-information-main__inner inner">
+
+            <div class="page-information__tab">
+              <a href="#" class="tab">
+                <span class="tab__text tab__text--first">ライセンス情報</span>
               </a>
             </div>
-          </div>
-      </a>
-    </div>
-    <!-- campaignページのスライド -->
-    <!-- スライドの中身 -->
-    <div class="l-campaign-slide">
-      <a href="#" class="slide">
-          <div class="slide__img">
-            <img src="./assets/images/common/campaign2.png" alt="色とりどりの魚の写真">
-          </div>
-          <div class="slide__body">
-            <div class="slide__labelwrapper">
-              <div class="slide__label">ライセンス講習</div>
-            </div>
-            <div class="slide__title">ライセンス取得</div>
-            <div class="slide__info">全部コミコミ(お一人様)</div>
-            <div class="slide__price">
-              <div class="slide__oldprice">¥56,000</div>
-              <div class="slide__newprice">¥46,000</div>
-            </div>
-            <p class="l-campaign-slide__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-            </p>
-            <p class="l-campaign-slide__date">2023/6/1-9/30</p>
-            <p class="l-campaign-slide__contact">ご予約・お問い合わせはコチラ</p>
-            <!-- btn -->
-            <div class="l-campaign-slide__btn">
-              <a href="#" class="btn">
-                <span class="btn__text">view more</span>
+            <div class="page-information__tab">
+              <a href="#" class="tab">
+                <span class="tab__text tab__text--second">ライセンス情報</span>
               </a>
             </div>
-          </div>
-      </a>
-    </div>
-    <!-- スライドの中身 -->
-    <div class="l-campaign-slide">
-      <a href="#" class="slide">
-          <div class="slide__img">
-            <img src="./assets/images/common/campaign3.png" alt="色とりどりの魚の写真">
-          </div>
-          <div class="slide__body">
-            <div class="slide__labelwrapper">
-              <div class="slide__label">ライセンス講習</div>
-            </div>
-            <div class="slide__title">ライセンス取得</div>
-            <div class="slide__info">全部コミコミ(お一人様)</div>
-            <div class="slide__price">
-              <div class="slide__oldprice">¥56,000</div>
-              <div class="slide__newprice">¥46,000</div>
-            </div>
-            <p class="l-campaign-slide__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-            </p>
-            <p class="l-campaign-slide__date">2023/6/1-9/30</p>
-            <p class="l-campaign-slide__contact">ご予約・お問い合わせはコチラ</p>
-            <!-- btn -->
-            <div class="l-campaign-slide__btn">
-              <a href="#" class="btn">
-                <span class="btn__text">view more</span>
+            <div class="page-information__tab">
+              <a href="#" class="tab">
+                <span class="tab__text tab__text--third">ライセンス情報</span>
               </a>
             </div>
+
           </div>
-      </a>
-    </div>
-    <!-- スライドの中身 -->
-    <div class="l-campaign-slide">
-      <a href="#" class="slide">
-          <div class="slide__img">
-            <img src="./assets/images/common/campaign4.png" alt="色とりどりの魚の写真">
-          </div>
-          <div class="slide__body">
-            <div class="slide__labelwrapper">
-              <div class="slide__label">ライセンス講習</div>
-            </div>
-            <div class="slide__title">ライセンス取得</div>
-            <div class="slide__info">全部コミコミ(お一人様)</div>
-            <div class="slide__price">
-              <div class="slide__oldprice">¥56,000</div>
-              <div class="slide__newprice">¥46,000</div>
-            </div>
-            <p class="l-campaign-slide__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-            </p>
-            <p class="l-campaign-slide__date">2023/6/1-9/30</p>
-            <p class="l-campaign-slide__contact">ご予約・お問い合わせはコチラ</p>
-            <!-- btn -->
-            <div class="l-campaign-slide__btn">
-              <a href="#" class="btn">
-                <span class="btn__text">view more</span>
-              </a>
-            </div>
-          </div>
-      </a>
-    </div>
-  </div>
-</div>
+        </section>
 
 
     <!-- contactセクション -->
-    <section class="contact" id="contact">
+    <section class="contact page-about__contact" id="contact">
     <div class="contact__inner inner">
       <div class="contact__contents">
         <div class="contact__left">
